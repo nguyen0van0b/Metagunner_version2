@@ -32,7 +32,9 @@
     top: 0;
     z-index: 10;
     transition: top 1s;
-    background-color: var(--color_black_down);
+    // background-color: var(--color_black_down);
+    background: linear-gradient(180deg, rgba(0, 51, 102, 0) 0%, #003366 100%);
+    filter: drop-shadow(0px 11px 34px rgba(0, 0, 0, 0.76));
     &Down {
         // box-shadow: 0 1px 10px var(--color_primary);
     }
@@ -89,10 +91,10 @@
     align-items: center;
     justify-content: space-around;
     &Home{
-        background: linear-gradient(90deg,#ff8e00 14.6%,#ff5003);
-        padding: 7px 37px;
-        border-radius: 5px;
-        margin-right: 30px;
+        // background: linear-gradient(90deg,#ff8e00 14.6%,#ff5003);
+        // padding: 7px 37px;
+        // border-radius: 5px;
+        // margin-right: 30px;
     }
     & li {
         position: relative;

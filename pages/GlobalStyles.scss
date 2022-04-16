@@ -137,7 +137,22 @@ video {
         }
     }
 }
-
+.buttonhome{
+    width: 100%;
+    height: 100%;
+}
+.buttonhome:after{
+    content: '';
+    width: 111px;
+    height: 37px;
+    background-image: url(../public/assets/button2.png);
+}
+.buttonhome:before{
+    content: '';
+    width: 106px;
+    height: 35px;
+    background-image: url(../public/assets/button1.png);
+}
 .btn{
     letter-spacing: .03em;
     text-decoration: none;
