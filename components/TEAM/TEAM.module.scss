@@ -1,0 +1,178 @@
+
+.Advisors {
+    overflow: hidden;
+    // background-image: url(../../public/assets/bg_features2.webp);
+    // background-position: center right;
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // position: relative;
+    padding-top: 90px;
+    &Title h2{
+        // width: 26%;
+        // margin: auto;
+        // margin-bottom: 4%;
+        font-family: 'Russo One', sans-serif;
+        text-align: center;
+        font-size: 45px;
+        color: var(--color_text_white);
+        font-weight: 100;
+    }
+    &Wrapper {
+        &Top{
+            margin: auto;
+            display: flex;
+            margin: 2% auto;
+            justify-content: center;
+            flex-wrap: wrap;
+            &Item {
+                width: 35%;
+                min-width: 570px;
+                text-align: center;
+                display: flex;
+                &Top {
+                    width: 40%;
+                    min-width: 245px;
+                    & img{
+                        height: auto;
+                    }
+                }
+                &Bottom {
+                    margin-top: 1rem;
+                    width: 56%;
+                    text-align: left;
+                    padding-left: 20px;
+                    & .name{
+                        font-size: 2rem;
+                        color: var(--color_text_white);
+                        margin-bottom: 5px;
+                    }
+                    & .position{
+                        font-size: 16px;
+                        color: var(--color_text_white);
+                        font-weight: 700;
+                        // font-style: italic;
+                        margin-bottom: 10px;
+                    }
+                    & .background{
+                        font-size: 15px;
+                        font-weight: 400;
+                        line-height: 2;
+                        color: var(--color_text_white);
+                        padding-left: 20px;
+                        letter-spacing: 0.5px;
+                    }
+                }
+            }
+        }
+        &Bottom{
+            max-width: 1600px;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            // display: grid;
+            // gap: 5%;
+            // grid-template-columns: repeat(auto-fit, minmax(calc(300px - 10%), calc(350px - 10%)));
+            // justify-content: center;
+            margin-bottom: 10%;
+            &Item{
+                width: 16.5%;
+                min-width: 250px;
+                &Top{
+                    width: 93%;
+                    margin: auto;
+                }
+                &Bottom {
+                    margin-top: 1rem;
+                    text-align: left;
+                    // padding-left: 20px;
+                    text-align: center;
+                    & .name{
+                        font-size: 1.4rem;
+                        color: var(--color_text_white);
+                        margin-bottom: 5px;
+                    }
+                    & p {
+                        font-size: 16px;
+                        color: var(--color_text_white);
+                        // font-style: italic;
+                    }
+            }
+            }
+        }
+    }
+        
+}
+@media screen and (max-width: 1700px) {
+    .background{
+        letter-spacing: 0 !important;
+    }
+}
+@media screen and (max-width: 1025px) {
+    .background{
+            font-size: 15px !important;
+    }
+    .Advisors {
+        &WrapperTop{
+            margin: 5% auto;
+        }
+    }
+}
+
+@media screen and (max-width: 685px) {
+    .Advisors {
+        &Wrapper {
+            gap: 2%;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .Advisors {
+        &Title h2{
+            font-size: 35px;
+        }
+        &WrapperTop{
+            gap: 1%;
+            &Item{
+                flex-direction:column;
+                width: 100%;
+                min-width: auto;
+                margin: 30px auto;
+                &Top{
+                    margin: auto;
+                    min-width: 200px;
+                }
+                &Bottom{
+                    width: 89%;
+                    margin: auto;
+                    & .name{
+                        text-align: center;
+                        font-size: 25px;
+                    }
+                    & .position{
+                        text-align: center;
+                        font-weight: 400;
+                    }
+                    & .background{
+                        line-height: 2;
+                        font-weight: 200;
+                    }
+                }
+            }
+        }
+        &WrapperBottom{
+            gap: 1%;
+            &Item{
+                width: 45%;
+                margin-bottom: 30px;
+                &Bottom{
+                    margin-top:-10px;
+                    &  .name{
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+}

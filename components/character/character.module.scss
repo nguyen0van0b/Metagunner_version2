@@ -1,0 +1,253 @@
+
+
+.character{
+    position: relative;
+    height: 100vh;
+    padding-top: 90px;
+    // mix-blend-mode: screen;
+    &Container{
+        position: absolute;
+        left: 50%;
+        height: auto !important;
+        transform: translate(-50%,0);
+        z-index: 1;
+    }
+    &BG{
+        position: absolute;
+        left: 0;
+        top: 60%;
+        width: 100vw;
+        height: 263px;
+        mix-blend-mode: screen;
+        background: linear-gradient(90deg, rgba(255, 63, 3, 0) 37.1%, rgba(255, 95, 2, 0.82) 57.51%, #FF8E00 100%);
+    }
+    &title{
+        position: absolute;
+        z-index: 1;
+        left: 50%;
+        transform: translate(-50%,0);
+        width: 100%;
+        text-align: center;
+        & p{
+            color: var(--color_text_white);
+            font-size: 18px;
+            font-weight: 200;
+            margin: 20px;
+        }
+        & img{
+            width: auto;
+            height: auto;
+            margin: auto;
+        }
+    }
+    & h1{
+        font-family: 'Russo One', sans-serif;
+        font-size: 45px;
+        color: var(--color_text_white);
+        text-align: center;
+        letter-spacing: 3px;
+    }
+    &FirstSlider{
+        width: 50%;
+        margin: auto;
+        position: absolute!important;
+        top: 28%;
+        left: 50%;
+        transform: translateX(-50%);
+        &Item{
+            width: 5.15% !important;
+        }
+        & img{
+            filter: grayscale(100%);
+            width: 70%;
+            cursor: pointer;
+        }
+    }
+    &SecondSlider{ 
+        position: relative;
+        display: flex !important;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        height: 50vh;
+        &Wrapper{
+            top: 35%;
+        }
+        &Title{
+            font-size: 17px;
+            font-weight: 200;
+            color: var(--color_text_white);
+            width: 30% !important;
+            padding: 20px;
+            padding-top: 145px;
+            letter-spacing: 0.5px;
+            line-height: 1.8;
+            // background-color: rgba(0, 0, 0, 0.781);
+            // border-radius: 30px;
+            & h2{
+                color: var(--color_text_white);
+                font-size: 45px;
+                text-transform: uppercase;
+            }
+            
+        }
+    }
+}
+.Soldier{
+    position: relative;
+    // position: absolute;
+    // top: 0;
+    // left: 20%;
+    &Wrapper{
+        position: relative;
+        z-index: 1;
+        animation: animationSoldier 4s infinite linear 2s;
+    }
+    &Bottom{
+        position: absolute;
+        top: 45%;
+        width: 70%;
+        z-index: 0;
+    }
+}
+
+@keyframes animationSoldier {
+    0% {
+        top: 0;
+    }
+    50%{
+        top: -15px;
+    }
+    100% {
+        top: 0;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .character{
+        &FirstSlider{
+            width: 70%;
+            & img{
+                width: 100%;
+            }
+        }
+        &SecondSlider{
+            &Title{
+                top: 45%;
+                left: 12%;
+                width: 40% !important;
+            }
+        }
+    }
+}
+@media screen and (max-width: 1025px) {
+    .character{
+        &title{
+            & p{
+            font-size: 1rem;
+            // display: none;
+            }
+        }
+        &FirstSlider{
+            width: 65%;
+        }
+        &SecondSlider{
+            & img{
+                order: 1;
+                // width: 80% !important;
+            }
+            &Title{
+                order: 2;
+                top: 35%;
+                left: 10%;
+                width: 55% !important;
+                font-size: 1rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .character{
+        &SecondSlider{
+            &Title{
+                top: 30%;
+            }
+        }
+    }
+}
+@media screen and (max-width: 600px) {
+    .character{
+        & h1{
+            font-size: 35px;
+            font-weight: 400;
+        }
+        &BG{
+            position: absolute;
+            left: 0;
+            top: 77%;
+            width: 100vw;
+            height: 24%;
+            mix-blend-mode: screen;
+            background: linear-gradient(90.01deg, rgba(255, 63, 3, 0) -22.2%, rgba(255, 95, 2, 0.82) 17.44%, #FF8E00 99.99%);
+        }
+        &title{
+            width: 90%;
+            top:5px;
+        }
+        &FirstSlider{
+            width: 95%;
+            top: 35%;
+            & img{
+                width: 85%;
+            }
+        }
+        &SecondSlider{
+            width: 100%;
+            display: inline-block !important;
+            text-align: center;
+            & img{
+                order: 1;
+            }
+            &Title{
+                width: 80%!important;
+                margin: auto;
+                margin-top: 50px;
+                padding: 0;
+                & h2{
+                    font-size: 30px;
+                    margin-bottom: 5px;
+                }
+            }
+        }
+    }
+    .Soldier{
+        width: 70%;
+        margin: auto;
+        margin-left: 25%;
+    }
+}
+@media screen and (max-width: 500px) {
+    .character{
+        &BG{
+            top: 70%;
+            height: 30%;
+        }
+    }
+    .Soldier{
+        padding-top: 5%;
+    }
+}
+@media screen and (max-width: 400px) {
+    .character{
+        &SecondSlider{
+            &Title{
+                margin: 75px auto auto;
+            }
+        }
+    }
+    .Soldier{
+        width: 75%;
+        margin-left: 22%;
+    }
+}

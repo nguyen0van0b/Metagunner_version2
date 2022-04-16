@@ -1,0 +1,46 @@
+.NFTsItem{
+    padding-top: 90px;
+    overflow: hidden;
+    // background-image: url(../../public/assets/bg_features2.webp);
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    &Title{
+        font-family: 'Russo One', sans-serif;
+        color: var(--color_text_white);
+        text-align: center;
+        & h2{
+            font-size: 45px !important;
+            font-weight: 100;
+        }
+    }
+    &Slider{
+        width: 50%;
+        margin: auto;
+        margin-bottom: 7%;
+        margin-top: 3%;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .NFTsItem{
+        &Slider{
+            width: 70%;
+        }
+    }
+}
+@media screen and (max-width:500px) {
+
+    .NFTsItem{
+        &Title{
+            width: 100%;
+            & h2{
+                font-size: 35px !important;
+            }
+        }
+        &SliderWeapon{
+            margin-bottom: 100px;
+        }
+    }
+}

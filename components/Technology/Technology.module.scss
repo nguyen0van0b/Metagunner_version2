@@ -1,0 +1,64 @@
+
+.technologys {
+    overflow:hidden;
+    padding-top: 30px;
+    position: relative;
+    & .container {
+        max-width: 1000px;
+        margin: auto;
+        margin-bottom: 300px;
+    }
+    &title h2{
+        font-family: 'Russo One', sans-serif;
+        text-align: center;
+        font-size: 45px;
+        color: var(--color_text_white);
+        margin-bottom: 50px;
+        font-weight: 100;
+    }
+    &Wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 100px;
+        align-items: center;
+        & * {
+            width: 25%;
+            margin: 20px calc(25% / 6);
+        }
+    }
+    &Unity{
+        width: 20%;
+    }
+    &>img{
+        width: 100vw;
+        height: auto;
+        position: absolute;
+        bottom: 0;
+    }
+}
+@media screen and (max-width:600px) {
+    .technologys {
+        &title{
+            top: 80px;
+            width: 80%;
+            margin: auto;
+            margin-bottom: 4%;
+            & h2{
+                font-size: 35px;
+            }
+        }
+    & .container {
+        margin-bottom: 0;
+    }
+    &Wrapper {
+        margin-bottom: 200px;
+        & * {
+            width: 40%;
+        }
+    }
+    &>img{
+        content: url("../../public/assets/BG_footer_MB.webp");
+    }
+    }
+}

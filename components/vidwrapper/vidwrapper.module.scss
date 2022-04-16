@@ -1,0 +1,122 @@
+.Vidwrapper{
+    position: relative;
+    height: 100vh;
+    & .banner_PC{
+        position: relative;
+        height: 100vh;
+        & img{
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: block;
+        }
+        & .image1{
+            height: 100vh;
+            width: 100%;
+        }
+        & .image2{
+            height: 370px;
+            width: 370px;
+            transform: translateX(-50%);
+            left: 50%;
+            top: 4%;
+        }
+        & .image3{
+            height: auto;
+            width: 100%;
+            bottom: 0;
+            top: auto;
+            z-index: 9;
+            transform: translateY(30%);
+        }
+        & .img5{
+            width: 100vw;
+            height: 140px;
+            position: absolute;
+            bottom: -50px;
+            top: auto;
+            left: 0;
+            display: block;
+        }
+    }
+    & .banner_MB{
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 1025px) {
+    .Vidwrapper .banner_PC {
+        & .image2{
+            top: 10%;
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    .Vidwrapper .banner_PC {
+        & .image2{
+            top: 15%;
+        }
+    }
+}
+@media screen and (max-width: 600px) {
+    .Vidwrapper{
+        height: 70vh;
+        & .banner_PC{
+            display: none;
+            & img{
+                display: block;
+            }
+        }
+        & .banner_MB{
+            display: block;
+            position: relative;
+            height: 70vh;
+            & img{
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: block;
+            }
+            & .image1{
+                height: 70vh;
+                width: 100%;
+            }
+            & .image2{
+                height: 30%;
+                width: auto;
+                transform: translate(-50%,-50%);
+                left: 50%;
+                top: 30%;
+            }
+            & .image3{
+                height: auto;
+                // width: 100%;
+                bottom: 0;
+                top: auto;
+                left:0;
+                z-index: 9;
+                transform: translateY(50%);
+            }
+            // & .image3{
+            //     height: auto;
+            //     width: 100%;
+            //     top: 0;
+            //     z-index: 9;
+            // }
+        }
+
+    }
+}
+@media screen and (max-width: 400px) {
+    .Vidwrapper{
+        height: 50vh;
+        & .banner_MB{
+            height: 50vh;
+            & .image1{
+                height: 50vh;
+            }
+        }
+
+    }
+}

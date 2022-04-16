@@ -1,0 +1,204 @@
+.each-fade {
+  display: flex;
+  width: 100%;
+}
+
+.each-fade > div {
+  width: 75%;
+}
+
+.each-fade > div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.each-fade p {
+  width: 25%;
+  font-size: 1em;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  background: #adceed;
+}
+.hide{
+  display: none !important;
+}
+.features{
+  position: relative;
+  &title h1{
+    padding-top: 90px;
+    margin-bottom: 50px;
+    font-family: 'Russo One', sans-serif;
+    color: var(--color_text_white);
+    font-size: 45px !important;
+    text-align: center;
+    font-weight: 100;
+  }
+  &PC{
+    display: block;
+  }
+  &MB{
+    display: none;
+  }
+  &BG{
+    position: absolute;
+    width: 100vw;
+    height: 50%;
+    left: 0;
+    bottom: 0;
+    background: linear-gradient(90deg, #FF8E00 52.6%, #FF5003 100%);
+    mix-blend-mode: screen;
+  }
+  &Slider{
+    max-width: 1500px;
+    display: flex !important;
+    align-items: center;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    height: 60vh;
+    &IMG{
+      width: 50%;
+      & img {
+        margin-right: 5%;
+        margin-left: auto;
+        max-width: 547px;
+        max-height: 524px;
+      }
+    }
+    &Title{
+      width: 37%;
+      color: var(--color_text_white);
+      margin-left: 5%;
+      height: 100%;
+      &img{
+        height: 70%;
+        position: relative;
+        & h2{
+          position: absolute;
+          bottom: 20px;
+          left: 0;
+          font-weight: bold;
+          font-size: 45px;
+        }
+      }
+      &cap{
+        height: 35%;
+      }
+      & img{
+        position: absolute;
+        bottom: 30px;
+        max-width: 266px;
+        max-height: 93px;
+      }
+      & p{
+        line-height: 1.8;
+        text-align: justify;
+        font-weight: 200;
+        font-size: 17px;
+      }
+    }
+  }
+}
+@media screen and (max-width:1201px) {
+  .features{
+    &Slider{
+      width: 80% !important;
+      height: 50vh;
+      &Title{
+        width: 50%;
+      }
+    }
+  }
+}
+@media screen and (max-width:1024px) {
+  .featuresSlider{
+      align-items: flex-end;
+      width: 90% !important;
+      height: 100%;
+      &Title{
+        &img{
+          position: static;
+          margin-bottom: 30px;
+          & h2{
+            position: unset;
+          }
+        }
+      }
+    }
+}
+@media screen and (max-width:800px) {
+  .features{
+    &Slider{
+      margin-top: 20px;
+      flex-direction: column;
+      align-items: center;
+      &Title{ 
+        margin-left: 0;
+        width: 100%;
+        text-align: center;
+        & img{
+          margin: 20px auto;
+        }
+        & p{
+          text-align: center;
+        }
+      }
+    }}
+}
+@media screen and (max-width:600px) {
+  .features{
+    &BG{
+      height: 42%;
+    }
+    &PC{
+      display: none;
+    }
+    &MB{
+      display: block;
+    }
+    &Slider{
+      // margin-top: 20px;
+      flex-direction: column;
+      margin: 20px auto 20px;
+      &IMG{
+        width: 90%;
+      }
+      &Title{ 
+        margin-bottom: 0;
+        & img{
+          max-width: 170px;
+        }
+        &img{
+          margin-top: 20px;
+          margin-bottom: 0;
+          & h2{
+            font-size: 30px;
+          }
+        }
+        & p{
+          display: none;
+        }
+      }
+    }}
+}
+@media screen and (max-width:500px) {
+  .features{
+    &title h1{
+      margin-bottom: 20px;
+    }
+  }
+  .featuresSliderIMG{
+    width: 95%;
+  }
+}
+@media screen and (max-width:400px) {
+  .features{
+    &title h1{
+      font-size: 35px !important;
+    }
+  }
+}
