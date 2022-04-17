@@ -7,7 +7,7 @@ import Character from "../components/character";
 import Basecamp from "../components/basecamp";
 import Roadmap from "../components/roadmap";
 import Tokenomics from "../components/tokenomics";
-import TEAM from "../components/TEAM";
+// import TEAM from "../components/TEAM";
 import Partners from "../components/partners";
 import Technology from "../components/Technology";
 import Event from "../components/Event";
@@ -56,7 +56,7 @@ function Home() {
       <Basecamp />
       <Roadmap />
       <Tokenomics />
-      <TEAM />
+      {/* <TEAM /> */}
       <Technology />
       <Footer />
     </Layout>

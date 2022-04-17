@@ -5,6 +5,11 @@
     height: 100vh;
     padding-top: 90px;
     // mix-blend-mode: screen;
+    background-image: url(../../public/assets/SOLDIER_BACKGROUND.png);
+    background-position: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
     &Container{
         position: absolute;
         left: 50%;
@@ -48,10 +53,10 @@
         letter-spacing: 3px;
     }
     &FirstSlider{
-        width: 50%;
+        width: 40%;
         margin: auto;
         position: absolute!important;
-        top: 28%;
+        bottom: 7%;
         left: 50%;
         transform: translateX(-50%);
         &Item{
@@ -59,7 +64,7 @@
         }
         & img{
             filter: grayscale(100%);
-            width: 70%;
+            // width: 70%;
             cursor: pointer;
         }
     }
@@ -69,9 +74,8 @@
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        height: 50vh;
         &Wrapper{
-            top: 35%;
+            top: 10%;
         }
         &Title{
             font-size: 17px;
@@ -101,12 +105,15 @@
     &Wrapper{
         position: relative;
         z-index: 1;
-        animation: animationSoldier 4s infinite linear 2s;
+        width: 76%;
+        margin-top: 1.7%;
+        margin-bottom: 5%;
     }
     &Bottom{
         position: absolute;
-        top: 45%;
-        width: 70%;
+        top: 0;
+        width: 80%;
+        height: auto;
         z-index: 0;
     }
 }

@@ -4,21 +4,31 @@ import Slider from "react-slick";
 import style from "./character.module.scss";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-const urlDestroyer_Icon = "/assets/Destroyer_Icon_Metagunner.webp";
-const urlSpecial_Force_Icon = "/assets/Special_Force_Icon_Metagunner.webp";
-const urlGunner_Icon = "/assets/Gunner_Icon_Metagunner.webp";
-const urlOfficer_Icon = "/assets/Officer_Icon_Metagunner.webp";
-const urlScout_Icon = "/assets/Scout_Icon_Metagunner.webp";
-const urlSniper_Icon = "/assets/Sniper_Icon_Metagunner.webp";
-const urlMedic_Icon = "/assets/Medic_Icon_Metagunner.webp";
-const urlBottom_Soldier = "/assets/Bottom_Soldier_Metagunner.webp";
-const urlDESTROYER = "/assets/DESTROYER.webp";
-const urlSP = "/assets/SP.webp";
-const urlGUNNER = "/assets/GUNNER.webp";
-const urlOFFICER = "/assets/OFFICER.webp";
-const urlSCOUT = "/assets/SCOUT.webp";
-const urlSNIPER = "/assets/SNIPER.webp";
-const urlMEDIC = "/assets/MEDIC.webp";
+// const urlDestroyer_Icon = "/assets/Destroyer_Icon_Metagunner.webp";
+// const urlSpecial_Force_Icon = "/assets/Special_Force_Icon_Metagunner.webp";
+// const urlGunner_Icon = "/assets/Gunner_Icon_Metagunner.webp";
+// const urlOfficer_Icon = "/assets/Officer_Icon_Metagunner.webp";
+// const urlScout_Icon = "/assets/Scout_Icon_Metagunner.webp";
+// const urlSniper_Icon = "/assets/Sniper_Icon_Metagunner.webp";
+// const urlMedic_Icon = "/assets/Medic_Icon_Metagunner.webp";
+
+const urlDestroyer_Icon = "/assets/Destroyer_Icon_Metagunner.png";
+const urlSpecial_Force_Icon = "/assets/Special_Force_Icon_Metagunner.png";
+const urlGunner_Icon = "/assets/Gunner_Icon_Metagunner.png";
+const urlOfficer_Icon = "/assets/Officer_Icon_Metagunner.png";
+const urlScout_Icon = "/assets/Scout_Icon_Metagunner.png";
+const urlSniper_Icon = "/assets/Sniper_Icon_Metagunner.png";
+const urlMedic_Icon = "/assets/Medic_Icon_Metagunner.png";
+
+
+const urlSoldier_Tab = "/assets/Soldier_Tab.png";
+const urlDESTROYER = "/assets/SOLDIERS_DESTROYER.png";
+const urlSPECIALFORCE = "/assets/SOLDIERS_SPECIAL_FORCE.png";
+const urlGUNNER = "/assets/SOLDIERS_GUNNER.png";
+const urlOFFICER = "/assets/SOLDIERS_OFFICER.png";
+const urlSCOUT = "/assets/SOLDIERS_SCOUT.png";
+const urlSNIPER = "/assets/SOLDIERS_SNIPER.png";
+const urlMEDIC = "/assets/SOLDIERS_MEDIC.png";
 const urlDotOrange = "/assets/dot_orange.webp";
 const urlRectangle = "/assets/Rectangle_Soldier.webp";
 
@@ -30,6 +40,7 @@ function SampleNextArrow(props) {
       className={className}
       style={{
         ...style,
+        display:'none',
         position: "absolute",
         top: "50%",
         right: 0,
@@ -48,6 +59,7 @@ function SamplePrevArrow(props) {
       className={className}
       style={{
         ...style,
+        display:'none',
         position: "absolute",
         top: "50%",
         left: 0,
@@ -94,15 +106,15 @@ export default class AsNavFor extends Component {
         <div className={clsx("container", style.characterContainer)}>
           <div className={style.charactertitle}>
             <h1>SOLDIER</h1>
-            <p>
+            {/* <p>
               The 15 characters of MetaGunner are divided into seven types of
               soldiers
-            </p>
-            <img src={urlDotOrange} alt=""/>
+            </p> */}
+            {/* <img src={urlDotOrange} alt=""/> */}
           </div>
         </div>
-        <div className={style.characterBG}>
-        </div>
+        {/* <div className={style.characterBG}>
+        </div> */}
         {/* <img src={urlRectangle} alt="" className={style.characterBG}/> */}
         <Slider
           asNavFor={this.state.nav2}
@@ -111,86 +123,32 @@ export default class AsNavFor extends Component {
           {...settings1}
         >
           <div className={style.characterSecondSlider}>
-            <div className={style.Soldier}>
               <img src={urlDESTROYER} className={style.SoldierWrapper}></img>
-              <img src={urlBottom_Soldier} className={style.SoldierBottom}></img>
-            </div>
-            <div className={style.characterSecondSliderTitle} data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-delay="600">
-              <h2>Destroyer</h2>
-              <span>
-                The Destroyer is a heavy-built six-foot-tall man who loves big guns and explosives.
-              </span>
-            </div>
+              <img src={urlSoldier_Tab} className={style.SoldierBottom}></img>
           </div>
           <div className={style.characterSecondSlider}>
-            <div className={style.Soldier}>
-              <img src={urlSP} className={style.SoldierWrapper}></img>
-              <img src={urlBottom_Soldier} className={style.SoldierBottom}></img>
-            </div>
-            <div className={style.characterSecondSliderTitle}>
-              <h2>Special Force</h2>
-              <span>
-                The Special Force is an elite trooper specializing in large-scale tasks and always completing them thoroughly.
-              </span>
-            </div>
+              <img src={urlSPECIALFORCE} className={style.SoldierWrapper}></img>
+              <img src={urlSoldier_Tab} className={style.SoldierBottom}></img>
           </div>
           <div className={style.characterSecondSlider}>
-            <div className={style.Soldier}>
               <img src={urlGUNNER} className={style.SoldierWrapper}></img>
-              <img src={urlBottom_Soldier} className={style.SoldierBottom}></img>
-            </div>
-            <div className={style.characterSecondSliderTitle}>
-              <h2>Gunner</h2>
-              <span>
-                The Gunner is a well-trained Navy SEAL that can improvise, adapt, and overcome any situation.
-              </span>
-            </div>
+              <img src={urlSoldier_Tab} className={style.SoldierBottom}></img>
           </div>
           <div className={style.characterSecondSlider}>
-            <div className={style.Soldier}>
               <img src={urlOFFICER} className={style.SoldierWrapper}></img>
-              <img src={urlBottom_Soldier} className={style.SoldierBottom}></img>
-            </div>
-            <div className={style.characterSecondSliderTitle}>
-              <h2>Officer</h2>
-              <span>
-                The Officer is a respectful but ruthless soldier that holds a record of bringing 21 terrorists to justice by himself. 
-              </span>
-            </div>
+              <img src={urlSoldier_Tab} className={style.SoldierBottom}></img>
           </div>
           <div className={style.characterSecondSlider}>
-            <div className={style.Soldier}>
               <img src={urlSCOUT} className={style.SoldierWrapper}></img>
-              <img src={urlBottom_Soldier} className={style.SoldierBottom}></img>
-            </div>
-            <div className={style.characterSecondSliderTitle}>
-              <h2>Scout</h2>
-              <span>
-                The scout is an expert on gathering information on the enemy lands. He is a master of army-styled ninjutsu.
-              </span>
-            </div>
+              <img src={urlSoldier_Tab} className={style.SoldierBottom}></img>
           </div>
           <div className={style.characterSecondSlider}>
-            <div className={style.Soldier}>
               <img src={urlSNIPER} className={style.SoldierWrapper}></img>
-              <img src={urlBottom_Soldier} className={style.SoldierBottom}></img>
-            </div>
-            <div className={style.characterSecondSliderTitle}>
-              <h2>Sniper</h2>
-              <span>{`The Sniper is rumored to be a ghost. No one has ever seen him, and no one wants to be his enemy. His targets never survive.`}</span>
-            </div>
+              <img src={urlSoldier_Tab} className={style.SoldierBottom}></img>
           </div>
           <div className={style.characterSecondSlider}>
-            <div className={style.Soldier}>
               <img src={urlMEDIC} className={style.SoldierWrapper}></img>
-              <img src={urlBottom_Soldier} className={style.SoldierBottom}></img>
-            </div>
-            <div className={style.characterSecondSliderTitle}>
-              <h2>Medic</h2>
-              <span>
-                The Medic is an extremely experienced battlefield doctor, but do not make the mistake of underestimating his fighting skills.
-              </span>
-            </div>
+              <img src={urlSoldier_Tab} className={style.SoldierBottom}></img>
           </div>
         </Slider>
         <Slider
