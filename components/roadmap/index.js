@@ -2,10 +2,11 @@
 import style from './roadmap.module.scss'
 import clsx from 'clsx'
 const urlTitle = '/assets/Roadmap_Metagunner.webp'
-const urlItem1 = '/assets/Line_Roadmap.webp'
-const urlItem2 = '/assets/Q2_2022_Metagunner.webp'
-const urlItem3 = '/assets/Q3_2022_Metagunner.webp'
-const urlItem4 = '/assets/Q4_2022_Metagunner.webp'
+const urlRobot1 = '/assets/robot_2.png'
+const urlItem1 = '/assets/Q1.png'
+const urlItem2 = '/assets/Q2.png'
+const urlItem3 = '/assets/Q3.png'
+const urlItem4 = '/assets/Q4.png'
 
 function Roadmap(){
     return(
@@ -16,8 +17,17 @@ function Roadmap(){
                     <h2>ROADMAP</h2>
                 </div>
             </div>
+            <img src={urlRobot1} className={style.roadmapRobot1} alt=""/>
+            <div className={style.RoadmapItems}>
+                <img src={urlItem1} alt=""/>
+                <img src={urlItem2} alt=""/>
+                <img src={urlItem3} alt=""/>
+                <img src={urlItem4} alt=""/>
+            </div>
+            <img src={urlRobot1} className={style.roadmapRobot2} alt=""/>
+
         {/* <img src={urlImg1} className={style.imgRoadmap} alt=""/> */}
-        <div className={style.roadmapWrapper}>
+        {/* <div className={style.roadmapWrapper}>
             <div className={style.roadmapWrapperItem} data-aos="fade-right" data-aos-delay="500" data-aos-duration="1000">
                 <h2>Q1 2022</h2>
                 <img src={urlItem1} alt=""/>
@@ -61,7 +71,7 @@ function Roadmap(){
                     <li>Tournament Event</li>
                 </ul>
             </div>
-        </div>
+        </div> */}
     </section>
     )
 }

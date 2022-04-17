@@ -2,18 +2,46 @@
 
 .roadmap{
     overflow: hidden;
-    // background-image: url(../../public/assets/bg_features2.webp);
-    // background-position: center right;
-    // background-repeat: no-repeat;
-    // background-size: cover;
+    background-image: url(../../public/assets/ROADMAP_BACKGROUND.png);
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: cover;
     position: relative;
-    margin-top: 90px;
+    height: 1230px;
+    margin-top: -350px;
     &Container{
         position: absolute;
+        top: 25%;
         left: 50%;
         height: 20% !important;
         transform: translate(-50%,0);
         z-index: 1;
+    }
+    & .RoadmapItems{
+        position: absolute;
+        top: 33%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 1250px;
+        & img{
+            width: 25%;
+        }
+    }
+    &Robot1{
+        position: absolute;
+        top: 50%;
+        left: 5%;
+        width: 10%;
+        height: auto;
+        animation: animationbot1 4s infinite linear;
+    }
+    &Robot2{
+        position: absolute;
+        top: 50%;
+        right: 5%;
+        width: 10%;
+        height: auto;
+        animation: animationbot2 4s infinite linear;
     }
     &Title h2{
         // position: absolute;
@@ -68,6 +96,22 @@
                 height: auto;
             }
         }
+    }
+}
+@keyframes animationbot1 {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@keyframes animationbot2 {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(-360deg);
     }
 }
 @media screen and (max-width:1025px) {
