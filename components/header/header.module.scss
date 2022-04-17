@@ -65,7 +65,7 @@
         top: 0;
         left: auto;
         &Menu {
-            width: calc(100% - 280px);
+            width: calc(100% - 250px);
             height: 90px;
             & nav {
                 height: 100%;
@@ -99,7 +99,7 @@
     & li {
         position: relative;
         & img{
-            width: 43px;
+            width: 44px;
             height: 5px;
             display: block;
             position: absolute;
@@ -112,7 +112,7 @@
             cursor: pointer;
             text-decoration: none;
             color: var(--color_text_white);
-            font-weight: 300;
+            font-weight: 500;
             font-size: 16px;
             transition: all .5s ease;
             

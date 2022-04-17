@@ -4,7 +4,7 @@ import Slider from "react-slick";
 import style from "./NFTsItem.module.scss"
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
-
+const urlimgMeta = "/assets/META_KOG_LINE.png";
 // Character Card
 const urlKrato = "/assets/Krato_Metagunner.webp"
 const urlZero = "/assets/Zero_Metagunner.webp"
@@ -305,6 +305,10 @@ export default class AsNavFor extends Component {
                 <img src={urlSniper_rifle} alt=""/>
           </div>
         </Slider>
+        <div className={style.NFTsMeta}>
+          <img src={urlimgMeta} alt="" className={style.Meta1}/>
+          <img src={urlimgMeta} alt="" className={style.Meta2}/>
+        </div>
       </section>
     );
   }

@@ -37,9 +37,12 @@
 .about {
     overflow:hidden;
     position: relative;
-    // z-index: 8;
+    background-image: url(../../public/assets/Trailer_background.png);
+    margin-top: -100px;
+    z-index: 9;
     & .container {
         max-width: none;
+        margin-top: 450px;
     }
     &BG{
         position: absolute;
@@ -49,18 +52,16 @@
         z-index: 0;
         top: 0;
         left: 0;
-        background: linear-gradient(328.72deg, #FF5003 17.52%, #FF8E00 58.57%);
-        clip-path: ellipse(60% 56% at 50% 31%);
-        mix-blend-mode: screen;
-        &robot{
+        // background: linear-gradient(328.72deg, #FF5003 17.52%, #FF8E00 58.57%);
+        // clip-path: ellipse(60% 56% at 50% 31%);
+        // mix-blend-mode: screen;
+        &img{
             position: absolute;
-            width: 475px;
+            width: 736px;
             height: auto;
-            opacity: 0.5;
-            top: 80px;
-            left: 101px;
-            transform: scalex(-1);
-            mix-blend-mode: overlay;
+            top: 120px;
+            left: 50%;
+            transform: translateX(-50%);
         }
         &medic{
             position: absolute;

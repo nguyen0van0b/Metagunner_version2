@@ -1,7 +1,7 @@
 .NFTsItem{
     padding-top: 90px;
     overflow: hidden;
-    // background-image: url(../../public/assets/bg_features2.webp);
+    background-image: url(../../public/assets/CARDS_BACKGROUND.png);
     background-position: center right;
     background-repeat: no-repeat;
     background-size: cover;
@@ -22,6 +22,37 @@
         margin-top: 3%;
     }
 }
+
+.NFTsMeta{
+    position: relative;
+    height: 44px;
+    & .Meta1{
+      position: absolute;
+      animation: animationMeta1 20s infinite linear 2s;
+    }
+    & .Meta2{
+      position: absolute;
+      right: -100%;
+      animation: animationMeta2 20s infinite linear 2s;
+    }
+}
+
+@keyframes animationMeta1 {
+    0% {
+        right: 0;
+    }
+    100% {
+        right: 100%;
+    }
+  }
+  @keyframes animationMeta2 {
+    0% {
+      right: -100%;
+  }
+  100% {
+      right: 0;
+  }
+  }
 
 @media screen and (max-width:1200px) {
     .NFTsItem{

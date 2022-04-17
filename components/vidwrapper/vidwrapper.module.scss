@@ -14,29 +14,77 @@
             height: 100vh;
             width: 100%;
         }
-        & .image2{
-            height: 370px;
-            width: 370px;
-            transform: translateX(-50%);
-            left: 50%;
-            top: 4%;
-        }
         & .image3{
             height: auto;
-            width: 100%;
+            width: 57%;
             bottom: 0;
             top: auto;
+            left: auto;
+            right: 0;
             z-index: 9;
-            transform: translateY(30%);
+            transform: translate(-5%,3%);
         }
-        & .img5{
-            width: 100vw;
-            height: 140px;
-            position: absolute;
-            bottom: -50px;
-            top: auto;
-            left: 0;
-            display: block;
+        & .WrapperContainer{
+            width: 30%;
+            height: 80%;
+            position: relative;
+            top: 50%;
+            left: 5%;
+            transform: translateY(-50%);
+            & .image2{
+                width: 40%;
+                height: auto;
+                margin-left: 0;
+                margin-right: auto;
+            }
+            & .imageSl{
+                top:30%;
+                left: 2%;
+                width: 100%;
+                height: auto;
+            }
+            & p{
+                position: absolute;
+                top: 50%;
+                left: 2%;
+                
+                line-height: 36px;
+                font-family: 'Monda';
+                font-weight: 400;
+                font-size: 20px;
+                color: white;
+            }
+            & .btnPD{
+                position: absolute;
+                bottom: 15%;
+                left: 2%;
+                font-size: 30px;
+                font-weight: 700;
+                color: #4EFEFE;
+                background-color: #0000;
+                background-image: url(../../public/assets/button2.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+                border: none;
+                width: 210px;
+                height: 71px;
+            }
+            & .btnPN{
+                position: absolute;
+                bottom: 15%;
+                left: 75%;
+                font-size: 30px;
+                font-weight: 700;
+                color: #4EFEFE;
+                transform: translate(-50%);
+                background-color: #0000;
+                background-image: url(../../public/assets/button2.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+                border: none;
+                width: 210px;
+                height: 71px;
+            }
         }
     }
     & .banner_MB{

@@ -26,8 +26,25 @@
 .hide{
   display: none !important;
 }
+.feature{
+  overflow: hidden;
+}
+.featuresSoldiers{
+  position: relative;
+  height: 121px;
+  & .soldiers1{
+    position: absolute;
+    animation: animationSoldiers1 20s infinite linear 2s;
+  }
+  & .soldiers2{
+    position: absolute;
+    right: -100%;
+    animation: animationSoldiers2 20s infinite linear 2s;
+  }
+}
 .features{
   position: relative;
+  background-image: url(../../public/assets/GFeatures_background.png);
   &title h1{
     padding-top: 90px;
     margin-bottom: 50px;
@@ -46,11 +63,12 @@
   &BG{
     position: absolute;
     width: 100vw;
-    height: 50%;
+    height: 62%;
     left: 0;
     bottom: 0;
-    background: linear-gradient(90deg, #FF8E00 52.6%, #FF5003 100%);
-    mix-blend-mode: screen;
+    // background: linear-gradient(90deg, #FF8E00 52.6%, #FF5003 100%);
+    background-image: url(../../public/assets/board_features.png);
+    // mix-blend-mode: screen;
   }
   &Slider{
     max-width: 1500px;
@@ -59,7 +77,7 @@
     margin: auto;
     margin-top: 20px;
     margin-bottom: 50px;
-    height: 60vh;
+    height: 50vh;
     &IMG{
       width: 50%;
       & img {
@@ -75,7 +93,7 @@
       margin-left: 5%;
       height: 100%;
       &img{
-        height: 70%;
+        height: 50%;
         position: relative;
         & h2{
           position: absolute;
@@ -86,7 +104,7 @@
         }
       }
       &cap{
-        height: 35%;
+        height: 50%;
       }
       & img{
         position: absolute;
@@ -102,6 +120,22 @@
       }
     }
   }
+}
+@keyframes animationSoldiers1 {
+  0% {
+      right: 0;
+  }
+  100% {
+      right: 100%;
+  }
+}
+@keyframes animationSoldiers2 {
+  0% {
+    right: -100%;
+}
+100% {
+    right: 0;
+}
 }
 @media screen and (max-width:1201px) {
   .features{
