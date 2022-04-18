@@ -20,6 +20,14 @@ const urlScout_Icon = "/assets/Scout_Icon_Metagunner.png";
 const urlSniper_Icon = "/assets/Sniper_Icon_Metagunner.png";
 const urlMedic_Icon = "/assets/Medic_Icon_Metagunner.png";
 
+const urlDestroyer_BG = "/assets/BG_Destroyer.png";
+const urlSpecial_Force_BG = "/assets/BG_Special_Force.png";
+const urlGunner_BG = "/assets/BG_gunner.png";
+const urlOfficer_BG = "/assets/BG_officer.png";
+const urlScout_BG = "/assets/BG_scout.png";
+const urlSniper_BG = "/assets/BG_Sniper.png";
+const urlMedic_BG = "/assets/BG_medic.png";
+
 
 const urlSoldier_Tab = "/assets/Soldier_Tab.png";
 const urlDESTROYER = "/assets/SOLDIERS_DESTROYER.png";
@@ -124,31 +132,31 @@ export default class AsNavFor extends Component {
         >
           <div className={style.characterSecondSlider}>
               <img src={urlDESTROYER} className={style.SoldierWrapper}></img>
-              <img src={urlSoldier_Tab} className={style.SoldierBottom}></img>
+              <img src={urlDestroyer_BG} className={style.SoldierBottom}></img>
           </div>
           <div className={style.characterSecondSlider}>
               <img src={urlSPECIALFORCE} className={style.SoldierWrapper}></img>
-              <img src={urlSoldier_Tab} className={style.SoldierBottom}></img>
+              <img src={urlSpecial_Force_BG} className={style.SoldierBottom}></img>
           </div>
           <div className={style.characterSecondSlider}>
               <img src={urlGUNNER} className={style.SoldierWrapper}></img>
-              <img src={urlSoldier_Tab} className={style.SoldierBottom}></img>
+              <img src={urlGunner_BG} className={style.SoldierBottom}></img>
           </div>
           <div className={style.characterSecondSlider}>
               <img src={urlOFFICER} className={style.SoldierWrapper}></img>
-              <img src={urlSoldier_Tab} className={style.SoldierBottom}></img>
+              <img src={urlOfficer_BG} className={style.SoldierBottom}></img>
           </div>
           <div className={style.characterSecondSlider}>
               <img src={urlSCOUT} className={style.SoldierWrapper}></img>
-              <img src={urlSoldier_Tab} className={style.SoldierBottom}></img>
+              <img src={urlScout_BG} className={style.SoldierBottom}></img>
           </div>
           <div className={style.characterSecondSlider}>
               <img src={urlSNIPER} className={style.SoldierWrapper}></img>
-              <img src={urlSoldier_Tab} className={style.SoldierBottom}></img>
+              <img src={urlSniper_BG} className={style.SoldierBottom}></img>
           </div>
           <div className={style.characterSecondSlider}>
               <img src={urlMEDIC} className={style.SoldierWrapper}></img>
-              <img src={urlSoldier_Tab} className={style.SoldierBottom}></img>
+              <img src={urlMedic_BG} className={style.SoldierBottom}></img>
           </div>
         </Slider>
         <Slider

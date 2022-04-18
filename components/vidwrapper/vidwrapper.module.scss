@@ -4,6 +4,15 @@
     & .banner_PC{
         position: relative;
         height: 100vh;
+        .image2{
+            position: absolute;
+            top: 15%;
+            left: 5%;
+            width: 10%;
+            height: auto;
+            margin-left: 0;
+            margin-right: auto;
+        }
         & img{
             position: absolute;
             top: 0;
@@ -31,12 +40,6 @@
             top: 50%;
             left: 5%;
             transform: translateY(-50%);
-            & .image2{
-                width: 40%;
-                height: auto;
-                margin-left: 0;
-                margin-right: auto;
-            }
             & .imageSl{
                 top:30%;
                 left: 2%;
@@ -95,76 +98,40 @@
 
 @media screen and (max-width: 1025px) {
     .Vidwrapper .banner_PC {
-        & .image2{
-            top: 10%;
-        }
-    }
-}
-@media screen and (max-width: 768px) {
-    .Vidwrapper .banner_PC {
-        & .image2{
-            top: 15%;
-        }
-    }
-}
-@media screen and (max-width: 600px) {
-    .Vidwrapper{
-        height: 70vh;
-        & .banner_PC{
-            display: none;
-            & img{
-                display: block;
-            }
-        }
-        & .banner_MB{
-            display: block;
-            position: relative;
-            height: 70vh;
-            & img{
-                position: absolute;
-                top: 0;
-                left: 0;
-                display: block;
-            }
-            & .image1{
-                height: 70vh;
-                width: 100%;
-            }
             & .image2{
-                height: 30%;
-                width: auto;
-                transform: translate(-50%,-50%);
+                top: 10%;
                 left: 50%;
-                top: 30%;
+                width: 30%;
+                transform: translate(-50%);
             }
             & .image3{
-                height: auto;
-                // width: 100%;
-                bottom: 0;
-                top: auto;
-                left:0;
-                z-index: 9;
-                transform: translateY(50%);
+                width: 120%;
+                right: -10%;
+                transform: none;
             }
-            // & .image3{
-            //     height: auto;
-            //     width: 100%;
-            //     top: 0;
-            //     z-index: 9;
-            // }
+            & .WrapperContainer{
+                display: none;
+            }
         }
+}
 
-    }
+@media screen and (max-width: 600px) {
+    .Vidwrapper .banner_PC {
+            & .image2{
+                top: 10%;
+                left: 50%;
+                width: 30%;
+                transform: translate(-50%);
+            }
+        }
 }
 @media screen and (max-width: 400px) {
-    .Vidwrapper{
-        height: 50vh;
-        & .banner_MB{
-            height: 50vh;
-            & .image1{
-                height: 50vh;
+    .Vidwrapper .banner_PC {
+            & .image2{
+                top: 30%;
+                left: 50%;
+                width: 50%;
             }
+            
         }
-
-    }
 }

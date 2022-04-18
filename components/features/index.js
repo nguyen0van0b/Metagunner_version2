@@ -40,6 +40,16 @@ function SamplePrevArrow(props) {
     />
   );
 }
+function SampleNoneArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{ ...style,backgroundColor:'red'}}
+      onClick={onClick}
+    />
+  );
+}
 // export default class AsNavFor extends Component {
 export default class AsNavFor extends Component {
     constructor(props) {
@@ -65,6 +75,11 @@ export default class AsNavFor extends Component {
       prevArrow: <SamplePrevArrow />,
       responsive: [
         {
+          breakpoint: 1024,
+          settings: {
+            nextArrow: <SampleNoneArrow />,
+            prevArrow: <SampleNoneArrow />,
+          },
           breakpoint: 600,
           settings: {
             fade: false,
@@ -73,11 +88,12 @@ export default class AsNavFor extends Component {
     };
    
     return (
+      <>
+      <div className={style.featuresSoldiers}>
+      <img src={urlimgSoldiers} alt="" className={style.soldiers1}/>
+      <img src={urlimgSoldiers} alt="" className={style.soldiers2}/>
+    </div>
       <section className={style.feature} id="features">
-        <div className={style.featuresSoldiers}>
-          <img src={urlimgSoldiers} alt="" className={style.soldiers1}/>
-          <img src={urlimgSoldiers} alt="" className={style.soldiers2}/>
-        </div>
         <div className={style.features} >
           <div className={clsx("container", style.featuresContainer)}>
               <div className={style.featurestitle}>
@@ -181,6 +197,7 @@ export default class AsNavFor extends Component {
             </Slider>
         </div>
       </section>
+      </>
     );
   }
 }

@@ -32,6 +32,8 @@
 .featuresSoldiers{
   position: relative;
   height: 121px;
+  width: auto;
+  margin: 20px auto;
   & .soldiers1{
     position: absolute;
     animation: animationSoldiers1 20s infinite linear 2s;
@@ -45,6 +47,7 @@
 .features{
   position: relative;
   background-image: url(../../public/assets/GFeatures_background.png);
+  padding-bottom: 50px;
   &title h1{
     padding-top: 90px;
     margin-bottom: 50px;
@@ -63,12 +66,11 @@
   &BG{
     position: absolute;
     width: 100vw;
-    height: 62%;
+    height: 55%;
     left: 0;
-    bottom: 0;
-    // background: linear-gradient(90deg, #FF8E00 52.6%, #FF5003 100%);
-    background-image: url(../../public/assets/board_features.png);
-    // mix-blend-mode: screen;
+    bottom: 8%;
+    background-image: url(/_next/static/media/board_features.f8833a32.png);
+    background-size: cover;
   }
   &Slider{
     max-width: 1500px;

@@ -1,7 +1,9 @@
+import clsx from 'clsx'
 import style from './tokenomics.module.scss'
 // const urlImg = '/assets/tokenomics.25d3c6dd_Metagunner.webp'
 // const urlTitle = '/assets/Tokenomics_Metagunner.webp'
 const urlLINE = '/assets/MONSTER_LINE.png'
+const urlLINEKOG = '/assets/META_KOG_LINE.png'
 const urlPIE_CHART = '/assets/pie_chart.png'
 const urlTEXTMB = '/assets/BOARD_tokenomics.png'
 const urlbot5 = '/assets/bot_robot_5.webp'
@@ -24,14 +26,16 @@ const urlTitle = '/assets/Team_Metagunner.webp'
 
 function Tokenomics(){
     return(
-    <div className={style.tokenomics_TEAM}>
-        <section className={style.tokenomics} id='tokenomics'>
-            <div className={style.tokenomicsLine}>
+        <div className={style.wrapper}>
+        <div className={style.tokenomicsLine}>
                 <img src={urlLINE} alt="" className={style.tokenomicsLINE1}/>
                 <img src={urlLINE} alt="" className={style.tokenomicsLINE2}/>
-            </div>
+        </div>
+    <div className={style.tokenomics_TEAM}>
+        
+        <section className={style.tokenomics} id='tokenomics'>
             <h2>TOKENOMICS</h2>
-            <img src={urlbot6} alt="" className={style.bot6}/>
+            {/* <img src={urlbot6} alt="" className={style.bot6}/> */}
             <h3 className={style.tokenomicsTotal}>Total supply: <span>1,000,000,000 MTG</span></h3>
 
             <div className={style.tokenomicsWrapper}>
@@ -42,7 +46,7 @@ function Tokenomics(){
                     <img src={urlTEXTMB} data-aos="flip-right" data-aos-delay="400" className={style.TextMB}></img>
                 </div>
             </div>
-            <img src={urlbot5} alt="" className={style.bot5}/>
+            {/* <img src={urlbot5} alt="" className={style.bot5}/> */}
         </section>
         <section className={style.Advisors} id='TEAM'>
         <div className="container">
@@ -51,48 +55,30 @@ function Tokenomics(){
                 <h2>TEAM</h2>
             </div>
         </div>
-            <div className={style.AdvisorsWrapperTop}>
-                <div className={style.AdvisorsWrapperTopItem} data-aos="zoom-in-up" data-aos-delay="500">
-                    <div className={style.AdvisorsWrapperTopItemTop}>
-                        <img src={urlImgAndy_Ly} alt=""/>
-                    </div>
-                    <div className={style.AdvisorsWrapperTopItemBottom}>
-                        <div className={style.name}>
-                            <h5>Andy Ly</h5>
-                        </div>
-                        <div className={style.position}>Founder/Chief Executive Officer</div>
-                        <div className={style.background}>
-                            <ul>
-                                <li>Founder of KOG Studio</li>
-                                <li>Chief Operating Officer of BEUS</li>
-                                <li>4+ years of experience in E-commerce in the global retail market</li>
-                                <li>7+ years of experience in E-business and Digital Media</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div className={style.AdvisorsWrapperTopItem} data-aos="zoom-in-up" data-aos-delay="500">
-                    <div className={style.AdvisorsWrapperTopItemTop}>
+            <div className={clsx(style.AdvisorsWrapperBottom,style.AdvisorsWrapperTop)}>
+                <div className={style.AdvisorsWrapperBottomItem} data-aos="zoom-in-up" data-aos-delay="1000">
+                    <div className={style.AdvisorsWrapperBottomItemTop}>
                         <img src={urlImgDUONG} alt=""/>
                     </div>
-                    <div className={style.AdvisorsWrapperTopItemBottom}>
-                        <div className={style.name}>
-                            <h5>Duong Vu</h5>
+                    <div className={style.AdvisorsWrapperBottomItemBottom}>
+                        <div className={style.name} href="">
+                            <h3>Duong Vu</h3>
                         </div>
-                        <div className={style.position}>Chief Technology Officer/ Game Designer</div>
-                        <div className={style.background}>
-                            <ul>
-                                <li>Chief Technology Officer of BEUS</li>
-                                <li>Senior Game Developer at X-Game</li>
-                                <li>7+ years of experience in software engineering in top Japan software companies: Rakuten Seimei Kikan, Sony Mobile Communications, Luvina.</li>
-                                <li>5+ years of experience managing software product outsourcing globally, especially in Japan.</li>
-                            </ul>
-                        </div>
+                        <p>Chief Technology Officer/ Game Designer</p>
                     </div>
                 </div>
-            </div>
-            <div className={style.AdvisorsWrapperBottom}>
-            <div className={style.AdvisorsWrapperBottomItem} data-aos="zoom-in-up" data-aos-delay="1000">
+                <div className={style.AdvisorsWrapperBottomItem} data-aos="zoom-in-up" data-aos-delay="1000">
+                    <div className={style.AdvisorsWrapperBottomItemTop}>
+                        <img src={urlImgAndy_Ly} alt=""/>
+                    </div>
+                    <div className={style.AdvisorsWrapperBottomItemBottom}>
+                        <div className={style.name} href="">
+                            <h3>Andy Ly</h3>
+                        </div>
+                        <p>Founder/Chief Executive Officer</p>
+                    </div>
+                </div>
+                <div className={style.AdvisorsWrapperBottomItem} data-aos="zoom-in-up" data-aos-delay="1000">
                     <div className={style.AdvisorsWrapperBottomItemTop}>
                         <img src={urlImgSON} alt=""/>
                     </div>
@@ -103,6 +89,8 @@ function Tokenomics(){
                         <p>Chief Marketing Officer</p>
                     </div>
                 </div>
+            </div>
+            <div className={style.AdvisorsWrapperBottom}>
                 <div className={style.AdvisorsWrapperBottomItem} data-aos="zoom-in-up" data-aos-delay="1000">
                     <div className={style.AdvisorsWrapperBottomItemTop}>
                         <img src={urlImgAN} alt=""/>
@@ -114,7 +102,6 @@ function Tokenomics(){
                         <p>Project Leader</p>
                     </div>
                 </div>
-             
                 <div className={style.AdvisorsWrapperBottomItem} data-aos="zoom-in-up" data-aos-delay="1000">
                     <div className={style.AdvisorsWrapperBottomItemTop}>
                         <img src={urlImgSteven} alt=""/>
@@ -161,6 +148,11 @@ function Tokenomics(){
                 </div>
             </div>
     </section>
+    </div>
+    <div className={style.tokenomicsLine}>
+                <img src={urlLINEKOG} alt="" className={style.tokenomicsLINE1}/>
+                <img src={urlLINEKOG} alt="" className={style.tokenomicsLINE2}/>
+        </div>
     </div>
     )
 }

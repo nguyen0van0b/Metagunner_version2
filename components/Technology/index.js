@@ -8,6 +8,7 @@ import style from './Technology.module.scss'
 function Technology(){
     return(
     <section className={style.technologys} id='partners'>
+        {/* <img src={imgBG_footer} alt=""/> */}
         <div className={style.container}>
             <div className={style.technologystitle}>
                         {/* <img src={title} alt=""/> */}
@@ -19,7 +20,6 @@ function Technology(){
                 <img className={style.technologysUnity} src={Unity} alt=""/>
             </div>
         </div>
-        <img src={imgBG_footer} alt=""/>
     </section>
     )
 }
