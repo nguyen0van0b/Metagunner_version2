@@ -1,4 +1,5 @@
 .Vidwrapper{
+    overflow: hidden;
     position: relative;
     height: 100vh;
     & .banner_PC{
@@ -107,6 +108,7 @@
             & .image3{
                 width: 120%;
                 right: -10%;
+                max-width: 900px;
                 transform: none;
             }
             & .WrapperContainer{

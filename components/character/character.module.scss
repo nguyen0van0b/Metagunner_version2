@@ -1,6 +1,9 @@
 
 
 .character{
+    &MB{
+        display: none;
+    }
     position: relative;
     height: 100vh;
     padding-top: 90px;
@@ -130,56 +133,28 @@
     }
 }
 
-@media screen and (max-width: 1200px) {
-    .character{
-        &FirstSlider{
-            width: 70%;
-            & img{
-                width: 100%;
-            }
-        }
-        &SecondSlider{
-            &Title{
-                top: 45%;
-                left: 12%;
-                width: 40% !important;
-            }
-        }
-    }
-}
-@media screen and (max-width: 1025px) {
-    .character{
-        &title{
-            & p{
-            font-size: 1rem;
-            // display: none;
-            }
-        }
-        &FirstSlider{
-            width: 65%;
-        }
-        &SecondSlider{
-            & img{
-                order: 1;
-                // width: 80% !important;
-            }
-            &Title{
-                order: 2;
-                top: 35%;
-                left: 10%;
-                width: 55% !important;
-                font-size: 1rem;
-            }
-        }
-    }
-}
 
+
+@media screen and (max-width: 1025px) {
+   
+}
 @media screen and (max-width: 700px) {
-    .character{
-        &SecondSlider{
-            &Title{
-                top: 30%;
+    .characterPC{
+        display: none;
+    }
+    .characterMB{
+        display: block;
+    & .character{
+        &Container{
+            position: relative;
+            height: 150px !important;
+            font-size: 45px;
+        }
+            &title{
+                color: var(--color_text_white);
+                margin-top: 90px;
             }
+
         }
     }
 }

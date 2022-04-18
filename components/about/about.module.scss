@@ -83,6 +83,8 @@
                 height: auto;
                 margin: 15%;
             }
+           
+               
             & p{
                 position: absolute;
                 top: 50%;
@@ -130,6 +132,12 @@
         }
         &BGimg{
           margin-top: 0;
+          position: relative;
+          width: 70%;
+          height: auto;
+          margin: auto;
+          left: 50%;
+          
         }
         & .container {
             height: auto;

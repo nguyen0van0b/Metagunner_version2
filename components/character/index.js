@@ -4,13 +4,6 @@ import Slider from "react-slick";
 import style from "./character.module.scss";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-// const urlDestroyer_Icon = "/assets/Destroyer_Icon_Metagunner.webp";
-// const urlSpecial_Force_Icon = "/assets/Special_Force_Icon_Metagunner.webp";
-// const urlGunner_Icon = "/assets/Gunner_Icon_Metagunner.webp";
-// const urlOfficer_Icon = "/assets/Officer_Icon_Metagunner.webp";
-// const urlScout_Icon = "/assets/Scout_Icon_Metagunner.webp";
-// const urlSniper_Icon = "/assets/Sniper_Icon_Metagunner.webp";
-// const urlMedic_Icon = "/assets/Medic_Icon_Metagunner.webp";
 
 const urlDestroyer_Icon = "/assets/Destroyer_Icon_Metagunner.png";
 const urlSpecial_Force_Icon = "/assets/Special_Force_Icon_Metagunner.png";
@@ -29,7 +22,7 @@ const urlSniper_BG = "/assets/BG_Sniper.png";
 const urlMedic_BG = "/assets/BG_medic.png";
 
 
-const urlSoldier_Tab = "/assets/Soldier_Tab.png";
+
 const urlDESTROYER = "/assets/SOLDIERS_DESTROYER.png";
 const urlSPECIALFORCE = "/assets/SOLDIERS_SPECIAL_FORCE.png";
 const urlGUNNER = "/assets/SOLDIERS_GUNNER.png";
@@ -37,8 +30,16 @@ const urlOFFICER = "/assets/SOLDIERS_OFFICER.png";
 const urlSCOUT = "/assets/SOLDIERS_SCOUT.png";
 const urlSNIPER = "/assets/SOLDIERS_SNIPER.png";
 const urlMEDIC = "/assets/SOLDIERS_MEDIC.png";
-const urlDotOrange = "/assets/dot_orange.webp";
-const urlRectangle = "/assets/Rectangle_Soldier.webp";
+
+const urlSoldier_Tab = "/assets/Soldier_Tab_MB.png";
+
+const urlDESTROYER_MB = "/assets/SOLDIERS_DESTROYER_MB.png";
+const urlSPECIALFORCE_MB = "/assets/SOLDIERS_SPECIAL_FORCE_MB.png";
+const urlGUNNER_MB = "/assets/SOLDIERS_GUNNER_MB.png";
+const urlOFFICER_MB = "/assets/SOLDIERS_OFFICER_MB.png";
+const urlSCOUT_MB = "/assets/SOLDIERS_SCOUT_MB.png";
+const urlSNIPER_MB = "/assets/SOLDIERS_SNIPER_MB.png";
+const urlMEDIC_MB = "/assets/SOLDIERS_MEDIC_MB.png";
 
 
 function SampleNextArrow(props) {
@@ -110,6 +111,7 @@ export default class AsNavFor extends Component {
       prevArrow: <SamplePrevArrow />
     };
     return (
+    <>
       <section className={style.character} id="character">
         <div className={clsx("container", style.characterContainer)}>
           <div className={style.charactertitle}>
@@ -192,6 +194,82 @@ export default class AsNavFor extends Component {
           </div>
         </Slider>
       </section>
+      <section className={style.character} id="character">
+        <div className={clsx("container", style.characterContainer)}>
+          <div className={style.charactertitle}>
+            <h1>SOLDIER</h1>
+          </div>
+        </div>
+        <Slider
+          asNavFor={this.state.nav2}
+          ref={(slider) => (this.slider1 = slider)}
+          className={style.characterSecondSliderWrapper}
+          {...settings1}
+        >
+          
+          <div className={style.characterSecondSlider}>
+              <img src={urlDESTROYER_MB} className={style.SoldierWrapper}></img>
+              <img src={urlSoldier_Tab} className={style.SoldierBottom}></img>
+          </div>
+          <div className={style.characterSecondSlider}>
+              <img src={urlSPECIALFORCE_MB} className={style.SoldierWrapper}></img>
+              <img src={urlSoldier_Tab} className={style.SoldierBottom}></img>
+          </div>
+          <div className={style.characterSecondSlider}>
+              <img src={urlGUNNER_MB} className={style.SoldierWrapper}></img>
+              <img src={urlSoldier_Tab} className={style.SoldierBottom}></img>
+          </div>
+          <div className={style.characterSecondSlider}>
+              <img src={urlOFFICER_MB} className={style.SoldierWrapper}></img>
+              <img src={urlSoldier_Tab} className={style.SoldierBottom}></img>
+          </div>
+          <div className={style.characterSecondSlider}>
+              <img src={urlSCOUT_MB} className={style.SoldierWrapper}></img>
+              <img src={urlSoldier_Tab} className={style.SoldierBottom}></img>
+          </div>
+          <div className={style.characterSecondSlider}>
+              <img src={urlSNIPER_MB} className={style.SoldierWrapper}></img>
+              <img src={urlSoldier_Tab} className={style.SoldierBottom}></img>
+          </div>
+          <div className={style.characterSecondSlider}>
+              <img src={urlMEDIC} className={style.SoldierWrapper}></img>
+              <img src={urlSoldier_Tab} className={style.SoldierBottom}></img>
+          </div>
+        </Slider>
+        <Slider
+          asNavFor={this.state.nav1}
+          ref={(slider) => (this.slider2 = slider)}
+          slidesToShow={7}
+          swipeToSlide={true}
+          focusOnSelect={true}
+          variableWidth= {true}
+          className={style.characterFirstSlider}
+          {...settings2}
+        >
+          <div style={{width:'calc(100% / 7 )'}}>
+                <img src={urlDestroyer_Icon} alt=""/>
+          </div>
+          <div style={{width:'calc(100% / 7 )'}}>
+                <img src={urlSpecial_Force_Icon} alt=""/>
+          </div>
+          <div style={{width:'calc(100% / 7 )'}}>
+                <img src={urlGunner_Icon} alt=""/>
+          </div>
+          <div style={{width:'calc(100% / 7 )'}}>
+                <img src={urlOfficer_Icon} alt=""/>
+          </div>
+          <div style={{width:'calc(100% / 7 )'}}>
+                <img src={urlScout_Icon} alt=""/>
+          </div>
+          <div style={{width:'calc(100% / 7 )'}}>
+                <img src={urlSniper_Icon} alt=""/>
+          </div>
+          <div style={{width:'calc(100% / 7 )'}}>
+                <img src={urlMedic_Icon} alt=""/>
+          </div>
+        </Slider>
+      </section>
+    </>    
     );
   }
 }
