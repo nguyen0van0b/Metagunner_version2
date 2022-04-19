@@ -1,5 +1,6 @@
 import clsx from 'clsx'
 import style from './tokenomics.module.scss'
+import Slider from "react-slick";
 // const urlImg = '/assets/tokenomics.25d3c6dd_Metagunner.webp'
 // const urlTitle = '/assets/Tokenomics_Metagunner.webp'
 const urlLINE = '/assets/MONSTER_LINE.png'
@@ -22,15 +23,55 @@ const urlImgMINH = '/assets/MINH_Metagunner.webp'
 const urlImgMee_Ahn = '/assets/Mee-Ahn_Metagunner.webp'
 const urlTitle = '/assets/Team_Metagunner.webp'
 
+const url1 = '/assets/1.png'
+const url2 = '/assets/2.png'
+const url3 = '/assets/3.png'
+const url4 = '/assets/4.png'
+const url5 = '/assets/5.png'
+const url6 = '/assets/6.png'
+const url7 = '/assets/7.png'
+const url8 = '/assets/8.png'
+const url9 = '/assets/9.png'
+const url10 = '/assets/10.png'
+const url11 = '/assets/11.png'
+const url12 = '/assets/12.png'
 
+var settings = {
+    dots: true,
+    infinite: false,
+    speed: 500,
+    slidesToShow: 12,
+    // slidesToScroll: 1,
+    initialSlide: 0,
+    responsive: [
+        {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2,
+              initialSlide: 2
+            }
+          }
+    ]
+  };
 
 function Tokenomics(){
     return(
         <div className={style.wrapper}>
-        <div className={style.tokenomicsLine}>
-                <img src={urlLINE} alt="" className={style.tokenomicsLINE1}/>
-                <img src={urlLINE} alt="" className={style.tokenomicsLINE2}/>
-        </div>
+        <Slider className={style.tokenomicsLine} {...settings}>
+               <img src={url1} alt="" className={style.tokenomicsLine1} />
+               <img src={url2} alt="" className={style.tokenomicsLine2}/>
+               <img src={url3} alt="" className={style.tokenomicsLine3}/>
+               <img src={url4} alt="" className={style.tokenomicsLine4}/>
+               <img src={url5} alt="" className={style.tokenomicsLine5}/>
+               <img src={url6} alt="" className={style.tokenomicsLine6}/>
+               <img src={url7} alt="" className={style.tokenomicsLine7}/>
+               <img src={url8} alt="" className={style.tokenomicsLine8}/>
+               <img src={url9} alt="" className={style.tokenomicsLine9}/>
+               <img src={url10} alt="" className={style.tokenomicsLine10}/>
+               <img src={url11} alt="" className={style.tokenomicsLine11}/>
+               <img src={url12} alt="" className={style.tokenomicsLine12}/>
+        </Slider>
     <div className={style.tokenomics_TEAM}>
         
         <section className={style.tokenomics} id='tokenomics'>

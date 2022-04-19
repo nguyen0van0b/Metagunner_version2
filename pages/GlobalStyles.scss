@@ -259,8 +259,9 @@ video {
 }
 .slick-next:hover,
 .slick-prev:hover{
-    filter: brightness(0) invert(1);
-    -webkit-filter: brightness(0) invert(1);
+    // filter: brightness(0) invert(1);
+    // -webkit-filter: brightness(0) invert(1);
+    background-image: url('../public/assets/prev_hover.png') !important;
 }
 // .slick-next:before{
 //     content: '' !important;
@@ -345,6 +346,11 @@ ul.slick-dots {
           width: 20px;
           height: 10px;
         }
+    .slick-track{
+        display: flex !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+    }
 }
 
 @media screen and (max-width: 400px) {

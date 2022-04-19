@@ -124,12 +124,20 @@
         }
     }
 }
-@media screen and (max-width:769px) {
+@media screen and (max-width:600px) {
     .roadmap{
+        margin-top: 0;
+        background-image: url(../../public/assets/ROADMAP_BACKGROUND_MB.png);
+        margin-top: -150px;
         &Wrapper{
             &Item{
                 width: 40%;
             }
+        }
+        & .RoadmapItems{
+            left: 0;
+            transform: none;
+            width: 100%;
         }
     }
 }

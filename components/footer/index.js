@@ -13,6 +13,13 @@ function Footer(){
         <footer className={style.footer}>
             <div className={style.footerContainer}>
                
+               
+                <div className={style.footerWrapper}>
+                    <div className={style.footerWrapperLogo}>
+                    <img src={imgLogo} alt=""/>
+                    <p className={style.copyright}>Copyright © 2021 MetaGunner All rights reserved.</p>
+                    </div>
+                </div>
                 <div className={style.footerMenu}>
                     <div className={style.footerMenuWrapper}>
                         <h2>ABOUT</h2>
@@ -38,12 +45,6 @@ function Footer(){
                             <li><a href="https://whitepaper.metagunner.io/" target="_blank" rel="noreferrer">Whitepaper</a></li>
                             <li><a href="mailto:contact@metagunner.io">Contact@metagunner.io</a></li>
                         </ul>
-                    </div>
-                </div>
-                <div className={style.footerWrapper}>
-                    <div className={style.footerWrapperLogo}>
-                    <img src={imgLogo} alt=""/>
-                    <p className={style.copyright}>Copyright © 2021 MetaGunner All rights reserved.</p>
                     </div>
                 </div>
                 <div className={style.footerBottom}>

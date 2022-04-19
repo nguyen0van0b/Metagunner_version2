@@ -4,7 +4,7 @@ import React from "react";
 const urlVideo = '/assets/basecamp_Metagunner.mp4'
 // const BgVideo = "/assets/Background_Video.webp";
 const urlimg = '/assets/TEXT_BaseCamp.png'
-// const urlimgmb = '/assets/basecamp-mb_Metagunner.webp'
+const urlimgmb = '/assets/BASECAMP_BACKGROUND_MB.png'
 // const urlimgbasecamp = '/assets/img_BaseCamp.webp'
 // const urlDotOrange = "/assets/dot_orange.webp";
 

@@ -65,7 +65,7 @@
         }
     }
     &Menu{
-        width: 40%;
+        width: 50%;
         color: var(--color_text_white);
         display: flex;
         align-items:flex-end;
@@ -139,7 +139,7 @@
     }
     &Bottom{
         display: flex;
-        width: 40%;
+        width: 30%;
         text-align: center;
         &Social{ 
             width: 100%;
@@ -199,17 +199,28 @@
                 margin: auto;
                 margin-top: -10%;
                 margin-bottom: -10%;
+                & p{
+                    width: auto;
+                    margin: auto;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    bottom: -80px;
+                }
             }
         }
         &Menu{
             width: 100%;
             padding: 4%;
+            margin-top: 50px;
             &Wrapper{
                 width: 50%;
             }
             &FAQ{
                 width: 50%;
             }
+        }
+        &Bottom{
+            width: 100%;
         }
     }
     .footerBottomSocial img{

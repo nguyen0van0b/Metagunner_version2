@@ -1,5 +1,6 @@
 // import urlImg1 from '../../media/game_gallery_02.94e6dc69.webp'
 import style from './roadmap.module.scss'
+import Slider from "react-slick";
 import clsx from 'clsx'
 const urlTitle = '/assets/Roadmap_Metagunner.webp'
 const urlRobot1 = '/assets/robot_2.png'
@@ -7,23 +8,40 @@ const urlItem1 = '/assets/Q1.png'
 const urlItem2 = '/assets/Q2.png'
 const urlItem3 = '/assets/Q3.png'
 const urlItem4 = '/assets/Q4.png'
-
+var settings = {
+    dots: true,
+    infinite: false,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    initialSlide: 0,
+    responsive: [
+        {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2,
+              initialSlide: 2
+            }
+          }
+    ]
+  };
 function Roadmap(){
+    
     return(
         <section className={style.roadmap} id='roadmap'>
             <div className={clsx('container',style.roadmapContainer)}>
                 <div className={style.roadmapTitle}>
-                {/* <img src={urlTitle} alt=""/> */}
                     <h2>ROADMAP</h2>
                 </div>
             </div>
             <img src={urlRobot1} className={style.roadmapRobot1} alt=""/>
-            <div className={style.RoadmapItems}>
+            <Slider className={style.RoadmapItems} {...settings}>
                 <img src={urlItem1} alt=""/>
                 <img src={urlItem2} alt=""/>
                 <img src={urlItem3} alt=""/>
                 <img src={urlItem4} alt=""/>
-            </div>
+            </Slider>
             <img src={urlRobot1} className={style.roadmapRobot2} alt=""/>
 
 

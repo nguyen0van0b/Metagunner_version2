@@ -5,7 +5,7 @@
         display: none;
     }
     position: relative;
-    height: 100vh;
+    height: 120vh;
     padding-top: 90px;
     // mix-blend-mode: screen;
     background-image: url(../../public/assets/SOLDIER_BACKGROUND.png);
@@ -59,16 +59,61 @@
         width: 40%;
         margin: auto;
         position: absolute!important;
-        bottom: 7%;
+        bottom: 23%;
         left: 50%;
         transform: translateX(-50%);
         &Item{
             width: 5.15% !important;
         }
         & img{
-            filter: grayscale(100%);
+            // filter: grayscale(100%);
             // width: 70%;
             cursor: pointer;
+        }
+        & .Icon_{
+            &Des:hover{
+                content: url(../../public/assets/Destroyer_Icon_Metagunner_hover.png);
+            }
+            &Spe:hover{
+                content: url(../../public/assets/Special_Force_Icon_Metagunner_hover.png);
+            }
+            &Gun:hover{
+                content: url(../../public/assets/Gunner_Icon_Metagunner_hover.png);
+            }
+            &Off:hover{
+                content: url(../../public/assets/Officer_Icon_Metagunner_hover.png);
+            }
+            &Sco:hover{
+                content: url(../../public/assets/Scout_Icon_Metagunner_hover.png);
+            }
+            &Sni:hover{
+                content: url(../../public/assets/Sniper_Icon_Metagunner_hover.png);
+            }
+            &Med:hover{
+                content: url(../../public/assets/Medic_Icon_Metagunner_hover.png);
+            }
+
+            &Des:active{
+                content: url(../../public/assets/Destroyer_Icon_Metagunner_Click.png);
+            }
+            &Spe:active{
+                content: url(../../public/assets/Special_Force_Icon_Metagunner_Click.png);
+            }
+            &Gun:active{
+                content: url(../../public/assets/Gunner_Icon_Metagunner_Click.png);
+            }
+            &Off:active{
+                content: url(../../public/assets/Officer_Icon_Metagunner_Click.png);
+            }
+            &Sco:active{
+                content: url(../../public/assets/Scout_Icon_Metagunner_Click.png);
+            }
+            &Sni:active{
+                content: url(../../public/assets/Sniper_Icon_Metagunner_Click.png);
+            }
+            &Med:active{
+                content: url(../../public/assets/Medic_Icon_Metagunner_Click.png);
+            }
         }
     }
     &SecondSlider{ 
@@ -77,8 +122,14 @@
         flex-direction: row;
         align-items: center;
         justify-content: center;
+        &PC{
+            position: relative;
+        }
+        &MB{
+            display: none;
+        }
         &Wrapper{
-            top: 10%;
+            top: 6%;
         }
         &Title{
             font-size: 17px;
@@ -102,25 +153,25 @@
 }
 .Soldier{
     position: relative;
-    // position: absolute;
-    // top: 0;
-    // left: 20%;
     &Wrapper{
         position: relative;
         z-index: 1;
-        width: 76%;
+        width: 100%;
+        height: auto;
         margin-top: 1.7%;
         margin-bottom: 5%;
     }
     &Bottom{
         position: absolute;
         top: 0;
-        width: 80%;
+        width: 100%;
         height: auto;
         z-index: 0;
     }
 }
-
+.iconSlider{
+    width: calc(100%/2) !important;
+}
 @keyframes animationSoldier {
     0% {
         top: 0;
@@ -136,31 +187,16 @@
 
 
 @media screen and (max-width: 1025px) {
-   
+.character{
+    height: 58vh;
 }
-@media screen and (max-width: 700px) {
-    .characterPC{
-        display: none;
-    }
-    .characterMB{
-        display: block;
-    & .character{
-        &Container{
-            position: relative;
-            height: 150px !important;
-            font-size: 45px;
-        }
-            &title{
-                color: var(--color_text_white);
-                margin-top: 90px;
-            }
+}
 
-        }
-    }
-}
 @media screen and (max-width: 600px) {
     .character{
+        height: 100vh;
         & h1{
+
             font-size: 35px;
             font-weight: 400;
         }
@@ -178,16 +214,32 @@
             top:5px;
         }
         &FirstSlider{
-            width: 95%;
-            top: 35%;
+            width: 70%;
+            bottom: 3%;
+            left: 50%;
+            max-width: 300px;
             & img{
                 width: 85%;
             }
+            &>.slick-list>.slick-track{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
         }
         &SecondSlider{
-            width: 100%;
             display: inline-block !important;
             text-align: center;
+            max-height: 810px;
+            max-width: 410px;
+            left: 50%;
+            transform: translateX(-50%);
+            &PC{
+                display: none;
+            }
+            &MB{
+                display: block;
+            }
             & img{
                 order: 1;
             }
@@ -207,6 +259,13 @@
         width: 70%;
         margin: auto;
         margin-left: 25%;
+        &Wrapper{
+            width: 87%;
+            margin: 5.5%;
+        }
+    }
+    .iconSlider{
+        width: calc(100%/4) !important;
     }
 }
 @media screen and (max-width: 500px) {

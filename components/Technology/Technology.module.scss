@@ -3,8 +3,12 @@
     overflow:hidden;
     padding-top: 30px;
     position: relative;
-    height: 100vh;
+    height: 85vh;
     background-image: url(../../public/assets/BG_footer.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
     display: flex;
     & .container {
         max-width: 1000px;
@@ -42,6 +46,7 @@
 }
 @media screen and (max-width:600px) {
     .technologys {
+        background-image: url(../../public/assets/TECHNOLOGY_BG_MB.png);
         &title{
             top: 80px;
             width: 80%;
@@ -59,9 +64,6 @@
         & * {
             width: 40%;
         }
-    }
-    &>img{
-        content: url("../../public/assets/BG_footer_MB.webp");
     }
     }
 }
