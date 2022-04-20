@@ -37,33 +37,12 @@ const urlCHARACTER = "/assets/Character-Card_Metagunner.webp"
 const urlWeapon = "/assets/Weapon-Card_Metagunner.webp"
 const urlprev_blue = "/assets/prev_blue.webp"
 
-// function SampleNextArrowBlue(props) {
-//   const { className, style, onClick } = props;
-//   return (
-//     <div
-//       className={className}
-//       style={{...style,position: 'absolute',top: '50%',right: '-10%',width: '60px',height: '60px',backgroundImage: 'url(/assets/prev_blue.webp)',backgroundPosition: 'center right',backgroundRepeat: 'no-repeat',backgroundSize: 'cover',transform: 'scale(-1) translateY(50%)'}}
-//       onClick={onClick}
-//     />
-//   );
-// }
-
-// function SamplePrevArrowBlue(props) {
-//   const { className, style, onClick } = props;
-//   return (
-//     <div
-//       className={className}
-//       style={{position: 'absolute',top: '50%',left: '-10%',zIndex:1,width: '60px',height: '60px',backgroundImage: 'url(/assets/prev_blue.webp)',backgroundPosition: 'center right',backgroundRepeat: 'no-repeat',backgroundSize: 'cover'}}
-//       onClick={onClick}
-//     />
-//   );
-// }
 function SampleNextArrowOrange(props) {
       const { className, style, onClick } = props;
       return (
         <div
           className={className}
-          style={{...style,position: 'absolute',top: '50%',right: '-10%',width: '60px',height: '60px',backgroundImage: 'url(/assets/prev_Orange.webp)',backgroundPosition: 'center right',backgroundRepeat: 'no-repeat',backgroundSize: 'cover',transform: 'scale(-1) translateY(50%)'}}
+          style={{...style,position: 'absolute',top: '50%',right: '-10%',width: '70px',height: '60px',backgroundImage: 'url(/assets/prev_Orange.webp)',backgroundPosition: 'center right',backgroundRepeat: 'no-repeat',backgroundSize: 'cover',transform: 'scale(-1) translateY(50%)'}}
           onClick={onClick}
         />
       );
@@ -74,54 +53,11 @@ function SampleNextArrowOrange(props) {
       return (
         <div
           className={className}
-          style={{position: 'absolute',top: '50%',left: '-10%',zIndex:1,width: '60px',height: '60px',backgroundImage: 'url(/assets/prev_Orange.webp)',backgroundPosition: 'center right',backgroundRepeat: 'no-repeat',backgroundSize: 'cover'}}
+          style={{position: 'absolute',top: '50%',left: '-10%',zIndex:1,width: '70px',height: '60px',backgroundImage: 'url(/assets/prev_Orange.webp)',backgroundPosition: 'center right',backgroundRepeat: 'no-repeat',backgroundSize: 'cover'}}
           onClick={onClick}
         />
       );
     }
-
-    // function SampleNextArrowBlueMB(props) {
-    //   const { className, style, onClick } = props;
-    //   return (
-    //     <div
-    //       className={className}
-    //       style={{...style,position: 'absolute',top: '50%',right: '-17%',width: '35px',height: '35px',backgroundImage: 'url(/assets/prev_blue.webp)',backgroundPosition: 'center right',backgroundRepeat: 'no-repeat',backgroundSize: 'cover',transform: 'scale(-1) translateY(50%)' }}
-    //       onClick={onClick}
-    //     />
-    //   );
-    // }
-    
-    // function SamplePrevArrowBlueMB(props) {
-    //   const { className, style, onClick } = props;
-    //   return (
-    //     <div
-    //       className={className}
-    //       style={{position: 'absolute',top: '50%',left: '-17%',zIndex:1,width: '35px',height: '35px',backgroundImage: 'url(/assets/prev_blue.webp)',backgroundPosition: 'center right',backgroundRepeat: 'no-repeat',backgroundSize: 'cover'}}
-    //       onClick={onClick}
-    //     />
-    //   );
-    // }
-    function SampleNextArrowOrangeMB(props) {
-          const { className, style, onClick } = props;
-          return (
-            <div
-              className={className}
-              style={{...style,position: 'absolute',top: '50%',right: '-17%',width: '35px',height: '35px',backgroundImage: 'url(/assets/prev_Orange.webp)',backgroundPosition: 'center right',backgroundRepeat: 'no-repeat',backgroundSize: 'cover',transform: 'scale(-1) translateY(50%)'}}
-              onClick={onClick}
-            />
-          );
-        }
-        
-        function SamplePrevArrowOrangeMB(props) {
-          const { className, style, onClick } = props;
-          return (
-            <div
-              className={className}
-              style={{position: 'absolute',top: '50%',left: '-17%',zIndex:1,width: '35px',height: '35px',backgroundImage: 'url(/assets/prev_Orange.webp)',backgroundPosition: 'center right',backgroundRepeat: 'no-repeat',backgroundSize: 'cover'}}
-              onClick={onClick}
-            />
-          );
-        }
 export default class AsNavFor extends Component {
    render() {
     const settingsBlue = {
@@ -150,8 +86,8 @@ export default class AsNavFor extends Component {
                 slidesToShow: 3,
                 slidesToScroll: 1,
                 initialSlide: 2,
-                nextArrow: <SampleNextArrowOrangeMB />,
-                prevArrow: <SamplePrevArrowOrangeMB />,
+                nextArrow: null,
+                prevArrow: null,
               }
             },
             {
@@ -159,8 +95,8 @@ export default class AsNavFor extends Component {
               settings: {
                 slidesToShow: 2,
                 slidesToScroll: 1,
-                nextArrow: <SampleNextArrowOrangeMB />,
-                prevArrow: <SamplePrevArrowOrangeMB />,
+                nextArrow: null,
+                prevArrow: null,
               }
             }
           ]
@@ -191,8 +127,8 @@ export default class AsNavFor extends Component {
                 slidesToShow: 3,
                 slidesToScroll: 1,
                 initialSlide: 2,
-                nextArrow: <SampleNextArrowOrangeMB />,
-                prevArrow: <SamplePrevArrowOrangeMB />,
+                nextArrow: null,
+                prevArrow: null,
               }
             },
             {
@@ -200,8 +136,8 @@ export default class AsNavFor extends Component {
               settings: {
                 slidesToShow: 2,
                 slidesToScroll: 1,
-                nextArrow: <SampleNextArrowOrangeMB />,
-                prevArrow: <SamplePrevArrowOrangeMB />,
+                nextArrow: null,
+                prevArrow: null,
               }
             }
           ]

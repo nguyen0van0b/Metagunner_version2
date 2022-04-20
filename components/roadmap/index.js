@@ -37,10 +37,10 @@ function Roadmap(){
             </div>
             <img src={urlRobot1} className={style.roadmapRobot1} alt=""/>
             <Slider className={style.RoadmapItems} {...settings}>
-                <img src={urlItem1} alt=""/>
-                <img src={urlItem2} alt=""/>
-                <img src={urlItem3} alt=""/>
-                <img src={urlItem4} alt=""/>
+                <img src={urlItem1} alt="" data-aos="fade-right" data-aos-delay="500" data-aos-duration="1000"/>
+                <img src={urlItem2} alt="" data-aos="fade-right" data-aos-delay="1000" data-aos-duration="1000"/>
+                <img src={urlItem3} alt="" data-aos="fade-right" data-aos-delay="1500" data-aos-duration="1000"/>
+                <img src={urlItem4} alt="" data-aos="fade-right" data-aos-delay="2000" data-aos-duration="1000"/>
             </Slider>
             <img src={urlRobot1} className={style.roadmapRobot2} alt=""/>
 

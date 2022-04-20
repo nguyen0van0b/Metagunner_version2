@@ -11,7 +11,7 @@
         // width: 26%;
         // margin: auto;
         // margin-bottom: 4%;
-        font-family: 'Russo One', sans-serif;
+        font-family: "NEXON Football Gothic",'Russo One', sans-serif;
         text-align: center;
         font-size: 45px;
         color: var(--color_text_white);
@@ -78,6 +78,7 @@
             &Item{
                 width: 16.5%;
                 min-width: 250px;
+                margin: 20px auto !important;
                 &Top{
                     width: 93%;
                     margin: auto;
@@ -88,7 +89,7 @@
                     // padding-left: 20px;
                     text-align: center;
                     & .name{
-                        font-size: 1.4rem;
+                        font-size: 1rem;
                         color: var(--color_text_white);
                         margin-bottom: 5px;
                     }

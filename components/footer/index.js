@@ -25,7 +25,7 @@ function Footer(){
                         <h2>ABOUT</h2>
                         <div className={style.footerMenuAbout}>
                             <ul>
-                                <li><a href="#features">Fearures</a></li>
+                                <li><a href="#features">Features</a></li>
                                 <li><a href="#NFTsItem">NFT Card</a></li>
                                 <li><a href="#character">Soldier</a></li>
                             </ul>

@@ -226,7 +226,7 @@ export default class AsNavFor extends Component {
           swipeToSlide={true}
           focusOnSelect={true}
           variableWidth= {true}
-          className={style.characterFirstSlider}
+          className={clsx(style.characterFirstSlider,'IconSlider')}
           {...settings2}
         >
           {/* width: ( window.innerWidth> 601?'calc(100% / 7)': 'calc(100% / 4)') */}

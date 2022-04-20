@@ -2,6 +2,7 @@
     overflow: hidden;
     position: relative;
     height: 100vh;
+
     & .banner_PC{
         position: relative;
         height: 100vh;
@@ -33,6 +34,7 @@
             right: 0;
             z-index: 9;
             transform: translate(-5%,3%);
+            animation: animationsoldier1 3s linear 1s;
         }
         & .WrapperContainer{
             width: 30%;
@@ -42,7 +44,7 @@
             left: 5%;
             transform: translateY(-50%);
             & .imageSl{
-                top:30%;
+                top:33%;
                 left: 2%;
                 width: 100%;
                 height: auto;
@@ -51,7 +53,6 @@
                 position: absolute;
                 top: 50%;
                 left: 2%;
-                
                 line-height: 36px;
                 font-family: 'Monda';
                 font-weight: 400;
@@ -66,12 +67,14 @@
                 font-weight: 700;
                 color: #4EFEFE;
                 background-color: #0000;
+                font-family: 'Monda';
                 background-image: url(../../public/assets/button2.png);
                 background-repeat: no-repeat;
                 background-size: cover;
                 border: none;
                 width: 210px;
                 height: 71px;
+                cursor: pointer;
             }
             & .btnPN{
                 position: absolute;
@@ -82,12 +85,14 @@
                 color: #4EFEFE;
                 transform: translate(-50%);
                 background-color: #0000;
+                font-family: 'Monda';
                 background-image: url(../../public/assets/button2.png);
                 background-repeat: no-repeat;
                 background-size: cover;
                 border: none;
                 width: 210px;
                 height: 71px;
+                cursor: pointer;
             }
         }
     }
@@ -96,6 +101,18 @@
     }
 }
 
+@keyframes animationsoldier1 {
+    0% {
+        opacity: 0;
+        right: -100%;
+        bottom: -100%;
+    }
+    100% {
+        opacity: 1;
+        right: 0;
+        bottom: 0;
+    }
+}
 
 @media screen and (max-width: 1025px) {
     .Vidwrapper .banner_PC {
@@ -119,6 +136,9 @@
 
 @media screen and (max-width: 600px) {
     .Vidwrapper .banner_PC {
+            & .image1{
+                content: url('../../public/assets/backgroung_HOME.png');
+            }
             & .image2{
                 top: 10%;
                 left: 50%;

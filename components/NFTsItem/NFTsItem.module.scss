@@ -7,12 +7,12 @@
     background-size: cover;
     position: relative;
     &Title{
-        font-family: 'Russo One', sans-serif;
+        font-family: "NEXON Football Gothic",'Poppins',sans-serif;
         color: var(--color_text_white);
         text-align: center;
         & h2{
             font-size: 45px !important;
-            font-weight: 100;
+            font-weight: 700;
         }
     }
     &Slider{
@@ -29,12 +29,12 @@
     margin: 30px auto;
     & .Meta1{
       position: absolute;
-      animation: animationMeta1 20s infinite linear 2s;
+      animation: animationMeta1 50s infinite linear 2s;
     }
     & .Meta2{
       position: absolute;
       right: -100%;
-      animation: animationMeta2 20s infinite linear 2s;
+      animation: animationMeta2 50s infinite linear 2s;
     }
 }
 

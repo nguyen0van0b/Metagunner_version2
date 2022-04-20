@@ -175,7 +175,6 @@
             }
         }
         &Menu{
-            width: 100%;
             &Wrapper{
                 width: 50%;
             }
@@ -200,7 +199,7 @@
                 margin-top: -10%;
                 margin-bottom: -10%;
                 & p{
-                    width: auto;
+                    width: 100%;
                     margin: auto;
                     left: 50%;
                     transform: translateX(-50%);

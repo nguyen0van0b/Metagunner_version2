@@ -40,7 +40,7 @@ section{
 }
 body {
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+    font-family: "Monda","Poppins", sans-serif;
     background-color: var(--bg_black_body);
     background-repeat: no-repeat;
     background-position: right top;
@@ -70,84 +70,13 @@ video {
     height: 100%;
     margin: 0 auto;
 }
-
-.btndemo {
-    position: relative;
-    display: inline-block;
-    font-family: "Bangers", sans-serif;
-    letter-spacing: .03em;
-    text-decoration: none;
-    &+& {
-        margin-left: 50px;
-    }
-    &Primary {
-        color:var(--color_text_white);
-        padding: 12px 50px;
-        font-size: 1.5rem;
-        &::before {
-            content: "";
-            background-color: var(--color_primary);
-            width: 100%;
-            height: 100%;
-            transform: skewX(-16deg);
-            position: absolute;
-            top: 0;
-            left: 0;
-            z-index: -1;
-        }
-        &::after {
-            content: "";
-            background-color: var(--color_primary);
-            width: 6px;
-            height: 100%;
-            transform: skewX(-16deg);
-            position: absolute;
-            top: 0;
-            right: -15px;
-            z-index: -1;
-            transition: all .5s ease;
-        }
-        &:hover::after {
-            right: 0px;
-        }
-    }
-    &Secondary {
-        color: var(--color_primary);
-        padding: 12px 50px;
-        font-size: 1.5rem;
-        &::before {
-            content: "";
-            background-color: var(--color_text_white);
-            width: 100%;
-            height: 100%;
-            transform: skewX(-16deg);
-            position: absolute;
-            top: 0;
-            left: 0;
-            z-index: -1;
-        }
-        &::after {
-            content: "";
-            background-color: var(--color_text_white);
-            width: 6px;
-            height: 100%;
-            transform: skewX(-16deg);
-            position: absolute;
-            top: 0;
-            right: -15px;
-            z-index: -1;
-            transition: all .5s ease;
-        }
-        &:hover::after {
-            right: 0px;
-        }
-    }
-}
 .buttonhome{
     width: 100%;
     height: 100%;
     position: relative;
     color: #4efefe !important;
+    font-family: "Monda","Poppins", sans-serif;
+    font-weight: 700;
 }
 .buttonhome::before{
     content: '';
@@ -155,7 +84,7 @@ video {
     height: 37px;
     background-image: url(../public/assets/button1.png);
     position: absolute;
-    top: -34%;
+    top: -25%;
     left: 50%;
     transform: translate(-50%);
     z-index: -1;
@@ -327,7 +256,15 @@ ul.slick-dots {
 .slick-current img{
     filter: grayscale(0) !important;
 }
-
+.Team_Top>.slick-list{
+    width: 50%;
+}
+.Team_Bottom{
+    margin-bottom: 100px !important;
+    &>.slick-list{
+        width: 80%;
+    }
+}
 @media screen and (max-width: 1025px) {
     .buttonhome::before{
         background-image: none;
@@ -342,11 +279,20 @@ ul.slick-dots {
     // body {
     //     background-image: url("../public/assets/BACKGROUND-MOBILE.webp");
     // }
+    .Team_Top>.slick-list{
+        width: 100%;
+    }
+    .Team_Bottom{
+        &>.slick-list{
+            width: 100%;
+        }
+    }
     ul.slick-dots  > li {
           width: 20px;
           height: 10px;
         }
-    .slick-track{
+
+    .IconSlider .slick-track{
         display: flex !important;
         flex-wrap: wrap !important;
         justify-content: center !important;

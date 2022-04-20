@@ -5,18 +5,18 @@ import style from "./features.module.scss";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 const urlimgSoldiers = "/assets/SOLDIERS_LINE.png";
-const urlimgARENA = "/assets/ARENA.webp";
-const urlimgARENA_MB = "/assets/ARENA_PIC_MOBILE.webp";
-const urlARENA_INFO = "/assets/ARENA_INFO.webp";
-const urlimgCAMPAIGN = "/assets/CAMPAIGN.webp";
-const urlimgCAMPAIGN_MB = "/assets/CAMPAIGN_PIC_MOBILE.webp";
-const urlimgCAMPAIGN_INFO = "/assets/CAMPAIGN_INFO.webp";
-const urlimgLEADERBOARD = "/assets/LEADERBOARD.webp";
-const urlimgLEADERBOARD_MB = "/assets/LEADERBOARD_PIC_MOBILE.webp";
-const urlimgLEADERBOARD_INFO = "/assets/LEADERBOARD_INFO.webp";
-const urlimgUPGRADE = "/assets/UPGRADE.webp";
-const urlimgUPGRADE_MB = "/assets/UPGRADE_PIC_MOBILE.webp";
-const urlimgUPGRADE_INFO = "/assets/UPGRADE_INFO.webp";
+const urlimgARENA = "/assets/ARENA_pc.webp";
+const urlimgARENA_MB = "/assets/ARENA_PIC_MB.webp";
+const urlARENA_INFO = "/assets/ARENA_INFO_MB.webp";
+const urlimgCAMPAIGN = "/assets/CAMPAIGN_pc.webp";
+const urlimgCAMPAIGN_MB = "/assets/CAMPAIGN_PIC_MB.webp";
+const urlimgCAMPAIGN_INFO = "/assets/CAMPAIGN_INFO_MB.webp";
+const urlimgLEADERBOARD = "/assets/LEADERBOARD_pc.webp";
+const urlimgLEADERBOARD_MB = "/assets/LEADERBOARD_PIC_MB.webp";
+const urlimgLEADERBOARD_INFO = "/assets/LEADERBOARD_INFO_MB.webp";
+const urlimgUPGRADE = "/assets/UPGRADE_pc.webp";
+const urlimgUPGRADE_MB = "/assets/UPGRADE_PIC_MB.webp";
+const urlimgUPGRADE_INFO = "/assets/UPGRADE_INFO_MB.webp";
 // const urlimgBlue_Dot = "/assets/Blue_Dot.webp";
 // const urlimgGray_Dot = "/assets/Gray_Dot.webp";
 
@@ -123,7 +123,7 @@ export default class AsNavFor extends Component {
               </div>
               <div className={style.featuresSliderTitlecap}>
                 <p>
-                  This mode is the main feature of MetaGunner, where players battle alien monsters to receive valuable rewards. Players embark on exciting adventures and play as soldiers armed with weapons to fight monsters in deadly lands.
+                  This mode is the main feature of MetaGunner, where players battle against monsters to receive valuable rewards. Players embark on exciting adventures and play as soldiers armed with weapons to fight monsters in deadly lands.
                 </p>
               </div>
               </div>

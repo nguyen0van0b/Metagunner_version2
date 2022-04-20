@@ -37,11 +37,28 @@ const url11 = '/assets/11.png'
 const url12 = '/assets/12.png'
 
 var settings = {
-    dots: true,
+    dots: false,
     infinite: false,
     speed: 500,
     slidesToShow: 12,
     // slidesToScroll: 1,
+    initialSlide: 0,
+    responsive: [
+        {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 7,
+              slidesToScroll: 2,
+              initialSlide: 2
+            }
+          }
+    ]
+  };
+  var settingsTeamTop = {
+    dots: true,
+    infinite: false,
+    slidesToShow: 3,
+    slidesToScroll: 1,
     initialSlide: 0,
     responsive: [
         {
@@ -54,7 +71,22 @@ var settings = {
           }
     ]
   };
-
+  var settingsTeamBottom = {
+    dots: true,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    initialSlide: 0,
+    responsive: [
+        {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2,
+              initialSlide: 2
+            }
+          }
+    ]
+  };
 function Tokenomics(){
     return(
         <div className={style.wrapper}>
@@ -96,7 +128,7 @@ function Tokenomics(){
                 <h2>TEAM</h2>
             </div>
         </div>
-            <div className={clsx(style.AdvisorsWrapperBottom,style.AdvisorsWrapperTop)}>
+            <Slider className={clsx(style.AdvisorsWrapperBottom,style.AdvisorsWrapperTop,'Team_Top')} {...settingsTeamTop}>
                 <div className={style.AdvisorsWrapperBottomItem} data-aos="zoom-in-up" data-aos-delay="1000">
                     <div className={style.AdvisorsWrapperBottomItemTop}>
                         <img src={urlImgDUONG} alt=""/>
@@ -130,8 +162,8 @@ function Tokenomics(){
                         <p>Chief Marketing Officer</p>
                     </div>
                 </div>
-            </div>
-            <div className={style.AdvisorsWrapperBottom}>
+               </Slider>
+            <Slider className={clsx(style.AdvisorsWrapperBottom,'Team_Bottom')} {...settingsTeamBottom}>
                 <div className={style.AdvisorsWrapperBottomItem} data-aos="zoom-in-up" data-aos-delay="1000">
                     <div className={style.AdvisorsWrapperBottomItemTop}>
                         <img src={urlImgAN} alt=""/>
@@ -187,7 +219,7 @@ function Tokenomics(){
                         <p>Lead Designer</p>
                     </div>
                 </div>
-            </div>
+            </Slider>
     </section>
     </div>
     <div className={style.tokenomicsLine}>

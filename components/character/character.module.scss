@@ -9,7 +9,7 @@
     padding-top: 90px;
     // mix-blend-mode: screen;
     background-image: url(../../public/assets/SOLDIER_BACKGROUND.png);
-    background-position: 100%;
+    background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -49,8 +49,9 @@
         }
     }
     & h1{
-        font-family: 'Russo One', sans-serif;
+        font-family: "NEXON Football Gothic",'Poppins',sans-serif;
         font-size: 45px;
+        font-weight: 700;
         color: var(--color_text_white);
         text-align: center;
         letter-spacing: 3px;
@@ -93,27 +94,27 @@
                 content: url(../../public/assets/Medic_Icon_Metagunner_hover.png);
             }
 
-            &Des:active{
-                content: url(../../public/assets/Destroyer_Icon_Metagunner_Click.png);
-            }
-            &Spe:active{
-                content: url(../../public/assets/Special_Force_Icon_Metagunner_Click.png);
-            }
-            &Gun:active{
-                content: url(../../public/assets/Gunner_Icon_Metagunner_Click.png);
-            }
-            &Off:active{
-                content: url(../../public/assets/Officer_Icon_Metagunner_Click.png);
-            }
-            &Sco:active{
-                content: url(../../public/assets/Scout_Icon_Metagunner_Click.png);
-            }
-            &Sni:active{
-                content: url(../../public/assets/Sniper_Icon_Metagunner_Click.png);
-            }
-            &Med:active{
-                content: url(../../public/assets/Medic_Icon_Metagunner_Click.png);
-            }
+            // &Des:active{
+            //     content: url(../../public/assets/Destroyer_Icon_Metagunner_Click.png);
+            // }
+            // &Spe:active{
+            //     content: url(../../public/assets/Special_Force_Icon_Metagunner_Click.png);
+            // }
+            // &Gun:active{
+            //     content: url(../../public/assets/Gunner_Icon_Metagunner_Click.png);
+            // }
+            // &Off:active{
+            //     content: url(../../public/assets/Officer_Icon_Metagunner_Click.png);
+            // }
+            // &Sco:active{
+            //     content: url(../../public/assets/Scout_Icon_Metagunner_Click.png);
+            // }
+            // &Sni:active{
+            //     content: url(../../public/assets/Sniper_Icon_Metagunner_Click.png);
+            // }
+            // &Med:active{
+            //     content: url(../../public/assets/Medic_Icon_Metagunner_Click.png);
+            // }
         }
     }
     &SecondSlider{ 
@@ -122,6 +123,7 @@
         flex-direction: row;
         align-items: center;
         justify-content: center;
+        animation: animationBoard 2s linear;
         &PC{
             position: relative;
         }
@@ -143,6 +145,7 @@
             // background-color: rgba(0, 0, 0, 0.781);
             // border-radius: 30px;
             & h2{
+                font-family: "NEXON Football Gothic",'Poppins',sans-serif;;
                 color: var(--color_text_white);
                 font-size: 45px;
                 text-transform: uppercase;
@@ -184,7 +187,14 @@
     }
 }
 
-
+@keyframes animationBoard {
+  from {
+    transform: scale(0.1) rotate(0deg);
+  }
+  to {
+    transform: scale(1) rotate(359deg);
+  }
+}
 
 @media screen and (max-width: 1025px) {
 .character{
@@ -196,9 +206,7 @@
     .character{
         height: 100vh;
         & h1{
-
             font-size: 35px;
-            font-weight: 400;
         }
         &BG{
             position: absolute;
@@ -214,17 +222,12 @@
             top:5px;
         }
         &FirstSlider{
-            width: 70%;
-            bottom: 3%;
+            width: 60%;
+            bottom: 0%;
             left: 50%;
             max-width: 300px;
             & img{
                 width: 85%;
-            }
-            &>.slick-list>.slick-track{
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
             }
         }
         &SecondSlider{
@@ -260,35 +263,23 @@
         margin: auto;
         margin-left: 25%;
         &Wrapper{
-            width: 87%;
-            margin: 5.5%;
+            width: auto;
+            height: calc(100vh - 120px);
+            margin: auto;
+            margin-top: 25px;
         }
-    }
-    .iconSlider{
-        width: calc(100%/4) !important;
+        &Bottom{
+            left: 50%;
+            transform: translateX(-50%);
+            width: auto;
+            height: calc(100vh - 90px);
+        }
     }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
     .character{
-        &BG{
-            top: 70%;
-            height: 30%;
+        &FirstSlider{
+            width: 70%;
         }
-    }
-    .Soldier{
-        padding-top: 5%;
-    }
-}
-@media screen and (max-width: 400px) {
-    .character{
-        &SecondSlider{
-            &Title{
-                margin: 75px auto auto;
-            }
-        }
-    }
-    .Soldier{
-        width: 75%;
-        margin-left: 22%;
     }
 }

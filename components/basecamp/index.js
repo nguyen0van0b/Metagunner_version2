@@ -1,7 +1,7 @@
 import style from './basecamp.module.scss'
 import clsx from 'clsx';
 import React from "react";
-const urlVideo = '/assets/basecamp_Metagunner.mp4'
+const urlVideo = '/assets/basecamp_Metagunner_MTG.mp4'
 // const BgVideo = "/assets/Background_Video.webp";
 const urlimg = '/assets/TEXT_BaseCamp.png'
 const urlimgmb = '/assets/BASECAMP_BACKGROUND_MB.png'
@@ -15,7 +15,7 @@ function Basecamp(){
                 <div className={style.basecampTitle}>
                     <h2>BASECAMP</h2>
                 </div>
-                <img src={urlimg} alt=""/>
+                <img src={urlimg} alt="" data-aos="fade-down" data-aos-delay="1000" data-aos-duration="1000"/>
         </section>
     )
 }

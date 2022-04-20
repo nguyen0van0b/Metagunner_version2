@@ -2,7 +2,6 @@
     position: relative;
     width: 100%;
     height: 100%;
-    margin-top: 100px;
     background-image: url(../../public/assets/BASECAMP_BACKGROUND.png);
     background-position: 100%;
     background-repeat: no-repeat;
@@ -29,10 +28,10 @@
         left: 50%;
         transform: translateX(-50%);
         & h2{
-            font-family: Russo One,sans-serif;
+            font-family: "NEXON Football Gothic",'Poppins',sans-serif;
             font-size: 45px;
+            font-weight: 700;
             color: var(--color_text_white);
-            font-weight: 100;
         }
     }
 }
@@ -59,13 +58,14 @@
     .basecamp {
         background-image: url(../../public/assets/BASECAMP_BACKGROUND_MB.png);
         height: 100vh;
+        margin-top: 100px;
         & video{
             display: none;
         }
         & img{
-            top: 15%;
-            left: 5%;
-            width: 90%;
+            top: 150px;
+            left: 10%;
+            width: 80%;
         }
     }
     

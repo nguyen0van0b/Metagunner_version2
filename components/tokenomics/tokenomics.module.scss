@@ -13,15 +13,15 @@
     padding-top: 20px;
     position: relative;
     & h2{
-        font-family: 'Russo One', sans-serif;
+        font-family: "NEXON Football Gothic",'Poppins',sans-serif;
         font-size: 45px;
+        font-weight: 700;
         color: var(--color_text_white);
         text-align: center;
-        font-weight: 100;
         margin: 50px auto;
     }
     &Total{
-        font-family: "Poppins", sans-serif;
+        font-family: 'Monda','Poppins',sans-serif;
         font-size: 35px !important;
         font-weight: 400;
         color: #4EFEFE;
@@ -65,12 +65,12 @@
     margin: 25px auto;
     & .tokenomicsLINE1{
       position: absolute;
-      animation: animationMONSTER1 15s infinite linear;
+      animation: animationMONSTER1 50s infinite linear;
     }
     & .tokenomicsLINE2{
       position: absolute;
       right: -100%;
-      animation: animationMONSTER2 15s infinite linear;
+      animation: animationMONSTER2 50s infinite linear;
     }
     &1:hover{
         content: url(../../public/assets/1.1.png);
@@ -226,6 +226,10 @@
     .TextPC{
         display: none;
     }
+    .tokenomicsLine{
+        margin: 20px auto;
+        height: 40px;
+    }
     .tokenomics {
         & h2{
             font-size: 35px;
@@ -286,84 +290,22 @@
 
 .Advisors {
     overflow: hidden;
-    // background-image: url(../../public/assets/bg_features2.webp);
-    // background-position: center right;
-    // background-repeat: no-repeat;
-    // background-size: cover;
-    // position: relative;
     padding-top: 90px;
     &Title h2{
-        // width: 26%;
-        // margin: auto;
-        // margin-bottom: 4%;
-        font-family: 'Russo One', sans-serif;
-        text-align: center;
+        font-family: "NEXON Football Gothic",'Russo One', sans-serif;
         font-size: 45px;
+        font-weight: 700;
+        text-align: center;
         color: var(--color_text_white);
-        font-weight: 100;
     }
     &Wrapper {
-        &Top{
-            margin: auto;
-            display: flex;
-            margin: 2% auto !important;
-            justify-content: center;
-            flex-wrap: wrap;
-            &Item {
-                width: 35%;
-                min-width: 570px;
-                text-align: center;
-                display: flex;
-                &Top {
-                    width: 40%;
-                    min-width: 245px;
-                    & img{
-                        height: auto;
-                    }
-                }
-                &Bottom {
-                    margin-top: 1rem;
-                    width: 56%;
-                    text-align: left;
-                    padding-left: 20px;
-                    & .name{
-                        font-size: 2rem;
-                        color: var(--color_text_white);
-                        margin-bottom: 5px;
-                    }
-                    & .position{
-                        font-size: 16px;
-                        color: var(--color_text_white);
-                        font-weight: 700;
-                        // font-style: italic;
-                        margin-bottom: 10px;
-                    }
-                    & .background{
-                        font-size: 15px;
-                        font-weight: 400;
-                        line-height: 2;
-                        color: var(--color_text_white);
-                        padding-left: 20px;
-                        letter-spacing: 0.5px;
-                    }
-                }
-            }
-        }
         &Bottom{
             max-width: 1600px;
             margin: auto;
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            // display: grid;
-            // gap: 5%;
-            // grid-template-columns: repeat(auto-fit, minmax(calc(300px - 10%), calc(350px - 10%)));
-            // justify-content: center;
-            margin-bottom: 10%;
-
             &Item{
-                width: 16.5%;
-                min-width: 250px;
                 &Top{
                     width: 93%;
                     margin: auto;
@@ -374,12 +316,12 @@
                     // padding-left: 20px;
                     text-align: center;
                     & .name{
-                        font-size: 1.4rem;
+                        font-size: 1rem;
                         color: var(--color_text_white);
                         margin-bottom: 5px;
                     }
                     & p {
-                        font-size: 16px;
+                        font-size: 12px;
                         color: var(--color_text_white);
                         // font-style: italic;
                     }
