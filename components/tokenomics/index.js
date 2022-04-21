@@ -90,7 +90,7 @@ var settings = {
 function Tokenomics(){
     return(
         <div className={style.wrapper}>
-        <Slider className={style.tokenomicsLine} {...settings}>
+        <Slider className={style.tokenomicsLineTop} {...settings}>
                <img src={url1} alt="" className={style.tokenomicsLine1} />
                <img src={url2} alt="" className={style.tokenomicsLine2}/>
                <img src={url3} alt="" className={style.tokenomicsLine3}/>

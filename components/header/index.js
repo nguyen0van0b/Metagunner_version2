@@ -65,7 +65,7 @@ function Header() {
               >
                 <li>
                   <a onClick={handleScrollTop} 
-                  className={clsx(style.mainMenuHome,'buttonhome')} >HOME</a>
+                  className={clsx(style.mainMenuHome,'buttonhome')} href="#" >HOME</a>
                 </li>
                 <li>
                   <a href="#features">FEATURES</a>

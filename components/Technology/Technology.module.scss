@@ -9,7 +9,6 @@
     background-size: cover;
     position: relative;
     display: flex;
-    margin-top: -20px;
     & .container {
         position: absolute;
         top: 40%;
@@ -17,7 +16,7 @@
         transform: translate(-50%);
     }
     &title h2{
-        font-family: 'Russo One', sans-serif;
+        font-family: "NEXON Football Gothic",'Poppins',sans-serif;
         text-align: center;
         font-size: 45px;
         color: var(--color_text_white);

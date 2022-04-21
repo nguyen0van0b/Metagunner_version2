@@ -59,7 +59,7 @@
         }
     }
 }
-.tokenomicsLine{
+.tokenomicsLineTOP{
     position: relative;
     height: 100px;
     margin: 25px auto;
@@ -107,6 +107,21 @@
     }
     &12:hover{
         content: url(../../public/assets/12.1.png);
+    }
+}
+
+.tokenomicsLine{
+    position: relative;
+    height: 44px;
+    margin: 25px auto;
+    & .tokenomicsLINE1{
+      position: absolute;
+      animation: animationMONSTER1 50s infinite linear;
+    }
+    & .tokenomicsLINE2{
+      position: absolute;
+      right: -100%;
+      animation: animationMONSTER2 50s infinite linear;
     }
 }
 

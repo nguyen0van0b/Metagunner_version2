@@ -9,7 +9,7 @@ function Technology(){
     return(
     <section className={style.technologys} id='partners'>
         {/* <img src={imgBG_footer} alt=""/> */}
-        <div className={style.technologysWrapperBG} data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-delay="2000" data-aos-duration="2000">
+        <div className={style.technologysWrapperBG} data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-delay="1000" data-aos-duration="2000">
         <div className={style.container} >
             <div className={style.technologystitle}>
                         {/* <img src={title} alt=""/> */}

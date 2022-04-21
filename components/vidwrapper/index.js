@@ -20,9 +20,9 @@ function Vidwrapper(){
         <section className={style.Vidwrapper} id='vidwrapper'>
             <div className={style.banner_PC}>
                 <img src={urlimg1} className={style.image1} data-value="5"  alt="" />
-                <img src={urlimg4} className={style.image3} alt=""/>
+                <img src={urlimg4} className={style.image3} alt="" />
                 <img src={urlLogo} className={style.image2} alt="" data-aos="flip-down" data-aos-delay="1000" data-aos-duration="1000"/>
-                <div className={style.WrapperContainer}>
+                <div className={style.WrapperContainer} data-aos="zoom-in-up" data-aos-delay="1000" data-aos-duration="1000">
                     <img src={urlSLOGAN} className={style.imageSl} data-value="5"  alt="" />
                     <p>A world where you can immerse yourself in battles located in a barren wilderness inhabited by monsters. Grab your friends and get ready to earn valuable rewards and enjoy the moment after stressful hours of work.</p>
                     <a href="https://docsend.com/view/6uxnyvc62bd6pya6" target='_blank'  rel="noreferrer"><button className={style.btnPD}>Pitch Deck</button></a>

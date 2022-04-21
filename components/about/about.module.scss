@@ -65,8 +65,34 @@
         }
     }
 }
-
-    @media screen and (max-width: 1025px) {
+.robotLtraile{
+    width: 8%;
+    height: auto;
+    position: absolute;
+    left: 10%;
+    bottom: 20%;
+    z-index: 1;
+    animation: transform linear;
+}
+.robotRtraile{
+    width: 8%;
+    height: auto;
+    position: absolute;
+    right: 10%;
+    bottom: 20%;
+    animation: transform 0.001s;
+}
+@media screen and (max-width: 1250px) {
+    .about {
+        .WrapperVideo{
+            & iframe{
+                top: 8.7%;
+                height: 85%;
+            }
+        }
+    }
+}
+@media screen and (max-width: 1025px) {
     .about {
         background-image: none;
         margin-top: -30%;
@@ -150,7 +176,7 @@
         }
     }
 }
-   
+
 @media screen and (max-width: 769px) {
     .about {
         &BG{

@@ -29,7 +29,7 @@ var settings = {
 function Roadmap(){
     
     return(
-        <section className={style.roadmap} id='roadmap'>
+        <section className={style.roadmap} id='roadmap' data-aos="fade-up" data-aos-delay="1000" data-aos-duration="1000">
             <div className={clsx('container',style.roadmapContainer)}>
                 <div className={style.roadmapTitle}>
                     <h2>ROADMAP</h2>

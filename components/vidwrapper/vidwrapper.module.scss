@@ -34,7 +34,7 @@
             right: 0;
             z-index: 9;
             transform: translate(-5%,3%);
-            animation: animationsoldier1 3s linear 1s;
+            animation: animationsoldier1 0.5s linear 1s;
         }
         & .WrapperContainer{
             width: 30%;
@@ -63,7 +63,7 @@
                 position: absolute;
                 bottom: 15%;
                 left: 2%;
-                font-size: 30px;
+                font-size: 26px;
                 font-weight: 700;
                 color: #4EFEFE;
                 background-color: #0000;
@@ -80,7 +80,7 @@
                 position: absolute;
                 bottom: 15%;
                 left: 75%;
-                font-size: 30px;
+                font-size: 26px;
                 font-weight: 700;
                 color: #4EFEFE;
                 transform: translate(-50%);
@@ -103,13 +103,13 @@
 
 @keyframes animationsoldier1 {
     0% {
-        opacity: 0;
-        right: -100%;
-        bottom: -100%;
+        opacity: 0.5;
+        transform: translate(-5%,3%) scale(0);
+        bottom: -50%;
     }
     100% {
         opacity: 1;
-        right: 0;
+        transform: translate(-5%,3%) scale(1);
         bottom: 0;
     }
 }
