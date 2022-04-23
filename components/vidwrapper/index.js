@@ -4,6 +4,7 @@ const urlLogo = '/assets/Logo.webp'
 const urlimg1 = '/assets/BACKGROUND.png'
 const urlimg4 = '/assets/Soldiers_banner.png'
 const urlSLOGAN = '/assets/SLOGAN.png'
+const urlVideo = '/assets/background_PC_MTG.mp4'
 
 
 function Vidwrapper(){
@@ -20,6 +21,7 @@ function Vidwrapper(){
         <section className={style.Vidwrapper} id='vidwrapper'>
             <div className={style.banner_PC}>
                 <img src={urlimg1} className={style.image1} data-value="5"  alt="" />
+                <video src={urlVideo} className={style.VideoBackground} autoPlay='autoplay' muted='muted' loop='loop' ></video>
                 <img src={urlimg4} className={style.image3} alt="" />
                 <img src={urlLogo} className={style.image2} alt="" data-aos="flip-down" data-aos-delay="1000" data-aos-duration="1000"/>
                 <div className={style.WrapperContainer} data-aos="zoom-in-up" data-aos-delay="1000" data-aos-duration="1000">

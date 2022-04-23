@@ -141,6 +141,12 @@
                 width: 210px;
                 height: 71px;
             }
+            & a:hover .btnPD{
+                background-image: url(../../public/assets/button2_hover.png);
+            }
+            & a:active .btnPD{
+                background-image: url(../../public/assets/button2_Active.png);
+            }
             & .btnPN{
                 position: absolute;
                 bottom: 25%;
@@ -157,6 +163,12 @@
                 border: none;
                 width: 210px;
                 height: 71px;
+            }
+            & .btnPN:hover{
+                background-image: url(../../public/assets/button2_hover.png);
+            }
+            & .btnPN:active{
+                background-image: url(../../public/assets/button2_Active.png);
             }
         }
         &BGimg{

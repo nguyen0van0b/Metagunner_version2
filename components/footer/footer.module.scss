@@ -12,8 +12,8 @@
         margin-bottom: 45px;
     }
     &Container{
-        display: flex;
         width: 100%;
+        display: flex;
     }
     &Wrapper {
         position: relative;
@@ -141,12 +141,14 @@
         display: flex;
         width: 30%;
         text-align: center;
+        flex-direction: column-reverse;
         &Social{ 
             width: 100%;
             margin-bottom: 20px;
             display: flex;
-            align-items: center;
+            align-items: flex-start;
             justify-content: center;
+            height: 40%;
             & img {
             width: 3vw;
             height: 3vw;
@@ -155,7 +157,27 @@
         
     }
 }
-
+.contact{
+    &Wrapper{
+        display: flex;
+        justify-content: center;
+        padding-top : 20px;
+        align-items: flex-end;
+    }
+    &Tele{
+        font-size: 20px;
+        font-weight: 700;
+        color: #4efefe;
+        background-color: #0000;
+        background-image: url(../../public/assets/button2.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        border: none;
+        width: max-content;
+        padding: 32px 15px;
+    }
+}
 @media screen and (max-width:1200px) {
     .footerBottomSocial{ 
                 & img {
@@ -175,6 +197,7 @@
             }
         }
         &Menu{
+            width: 100%;
             &Wrapper{
                 width: 50%;
             }
@@ -199,7 +222,7 @@
                 margin-top: -10%;
                 margin-bottom: -10%;
                 & p{
-                    width: 100%;
+                    width: auto;
                     margin: auto;
                     left: 50%;
                     transform: translateX(-50%);

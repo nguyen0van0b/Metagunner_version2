@@ -15,7 +15,7 @@ function About() {
     const handleScroll = () => {
       if( window.scrollY < 1310 && window.scrollY > 410 ){
         if (window.innerWidth > 1720){
-          setPositionX(((window.scrollY - 1300)/5))
+          setPositionX(((window.scrollY - 1500)/6))
           setPositionY((window.scrollY - 1300))
           setDisplayRB('block')
         }else
@@ -28,13 +28,22 @@ function About() {
     // return () => window.removeEventListener("scroll", handleScroll);
   }, [positionX]);
 
+  useEffect(() => {
+    let div = document.getElementById("playnow");
+    div.onmouseover = function () {
+      div.innerHTML = "Coming Soon";
+    };
+    div.onmouseout = function () {
+      div.innerHTML = "Play Now";
+    };
+  });
   return (
     <section className={style.about} id="about" >
         <div className={style.WrapperContainer}>
             <img src={urlSLOGAN} className={style.imageSl} data-value="5"  alt="" />
             <p>A world where you can immerse yourself in battles located in a barren wilderness inhabited by monsters. Grab your friends and get ready to earn valuable rewards and enjoy the moment after stressful hours of work.</p>
             <button type="" className={style.btnPD}>Pitch Deck</button>
-            <button type="" className={style.btnPN}>Play now</button>
+            <button type="" className={style.btnPN}  id="playnow">Play now</button>
         </div>
           <img src={urlimgrobot} className={style.aboutBGimg} />
       <div className={clsx("container", style.container)}>

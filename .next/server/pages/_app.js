@@ -25,7 +25,7 @@ const event = (name, options = {})=>{
 
 /***/ }),
 
-/***/ 232:
+/***/ 801:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 // ESM COMPAT FLAG
@@ -41,8 +41,8 @@ var jsx_runtime_ = __webpack_require__(997);
 ;// CONCATENATED MODULE: external "next/head"
 const head_namespaceObject = require("next/head");
 var head_default = /*#__PURE__*/__webpack_require__.n(head_namespaceObject);
-;// CONCATENATED MODULE: external "next/router"
-const router_namespaceObject = require("next/router");
+// EXTERNAL MODULE: external "next/router"
+var router_ = __webpack_require__(853);
 // EXTERNAL MODULE: external "react"
 var external_react_ = __webpack_require__(689);
 ;// CONCATENATED MODULE: external "next/script"
@@ -62,7 +62,7 @@ var fpixel = __webpack_require__(593);
 
 
 function MyApp({ Component , pageProps  }) {
-    const router = (0,router_namespaceObject.useRouter)();
+    const router = (0,router_.useRouter)();
     (0,external_react_.useEffect)(()=>{
         // This pageview only triggers the first time (it's important for Pixel to have real information)
         fpixel/* pageview */.LV();
@@ -111,6 +111,13 @@ function MyApp({ Component , pageProps  }) {
 
 /***/ }),
 
+/***/ 853:
+/***/ ((module) => {
+
+module.exports = require("next/router");
+
+/***/ }),
+
 /***/ 689:
 /***/ ((module) => {
 
@@ -132,7 +139,7 @@ module.exports = require("react/jsx-runtime");
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = (__webpack_exec__(232));
+var __webpack_exports__ = (__webpack_exec__(801));
 module.exports = __webpack_exports__;
 
 })();

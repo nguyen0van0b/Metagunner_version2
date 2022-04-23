@@ -12,8 +12,6 @@ function Footer(){
     return(
         <footer className={style.footer}>
             <div className={style.footerContainer}>
-               
-               
                 <div className={style.footerWrapper}>
                     <div className={style.footerWrapperLogo}>
                     <img src={imgLogo} alt=""/>
@@ -25,7 +23,7 @@ function Footer(){
                         <h2>ABOUT</h2>
                         <div className={style.footerMenuAbout}>
                             <ul>
-                                <li><a href="#features">Features</a></li>
+                                <li><a href="#features">Fearures</a></li>
                                 <li><a href="#NFTsItem">NFT Card</a></li>
                                 <li><a href="#character">Soldier</a></li>
                             </ul>
@@ -54,6 +52,9 @@ function Footer(){
                             <a href="https://twitter.com/MetaGunner_io" target="_blank" rel="noopener noreferrer"><img src={imgTwitter} alt=""/></a>
                             <a href="https://metagunner.medium.com" target="_blank" rel="noopener noreferrer"><img src={imgMedium} alt=""/></a>
                             <a href="https://www.facebook.com/Meta-Gunner-104600948766397" target="_blank" rel="noopener noreferrer"><img src={imgFacebook} alt=""/></a>
+                    </div>
+                    <div className={style.contactWrapper}><a  href='https://t.me/Matt_MTG' target="_blank" rel="noopener noreferrer">
+                        <div className={style.contactTele} >Contact on Telegram</div></a>
                     </div>
                 </div>
             </div>

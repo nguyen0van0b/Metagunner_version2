@@ -106,7 +106,7 @@ export default class AsNavFor extends Component {
               {...settings1}
 
               >
-            <div className={style.featuresSlider} data-aos="fade-up" data-aos-delay="600">
+            <div className={style.featuresSlider} data-aos="fade-up">
               <div className={style.featuresSliderIMG}>
                 <div className={style.featuresMB}>
                   <img src={urlimgCAMPAIGN_INFO} className={clsx({[style.hide]:!this.state.Campaign})} onClick={() => this.setState({ Campaign: !this.state.Campaign })} alt=""/>

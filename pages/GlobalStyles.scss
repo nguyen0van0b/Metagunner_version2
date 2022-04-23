@@ -78,11 +78,38 @@ video {
     font-family: "Monda","Poppins", sans-serif;
     font-weight: 700;
 }
+.buttonhome:hover{
+    color: white !important;
+}
 .buttonhome::before{
     content: '';
     width: 111px;
     height: 37px;
     background-image: url(../public/assets/button1.png);
+    position: absolute;
+    top: -25%;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: -1;
+    color: white;
+}
+
+.buttonhome:hover::before{
+    content: '';
+    width: 111px;
+    height: 37px;
+    background-image: url(../public/assets/button1_hover.png);
+    position: absolute;
+    top: -25%;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: -1;
+}
+.buttonhome:active::before{
+    content: '';
+    width: 111px;
+    height: 37px;
+    background-image: url(../public/assets/button1_Active.png);
     position: absolute;
     top: -25%;
     left: 50%;
@@ -188,8 +215,6 @@ video {
 }
 .slick-next:hover,
 .slick-prev:hover{
-    // filter: brightness(0) invert(1);
-    // -webkit-filter: brightness(0) invert(1);
     background-image: url('../public/assets/prev_hover.png') !important;
 }
 // .slick-next:before{

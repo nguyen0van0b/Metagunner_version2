@@ -15,7 +15,7 @@ function Basecamp(){
                 <div className={style.basecampTitle}>
                     <h2>BASECAMP</h2>
                 </div>
-                <img src={urlimg} alt="" data-aos="fade-down" data-aos-delay="1000" data-aos-duration="1000"/>
+                <img src={urlimg} alt="" data-aos="zoom-in-up"/>
         </section>
     )
 }

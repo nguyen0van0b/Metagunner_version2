@@ -1,22 +1,30 @@
-import { useEffect } from 'react';
+import { useEffect,useState } from 'react';
+import { useRouter } from "next/router";
 import AOS from "aos";
-import style from './layout.module.scss'
-// const BACKGROUNDMB = '/assets/BACKGROUND-MOBILE.webp'
-// const BACKGROUND = '/assets/BACKGROUND.webp'
-// const BACKGROUNDVideo = '/assets/background_PC.mp4'
 
 function Layout({children}){
+        const router = useRouter()
+        const [loading, setLoading] = useState(false);
         useEffect(() => {
-                AOS.init();
+                AOS.init({duration: 1200,});
                 AOS.refresh();
               }, []);
+          useEffect(() => { //<-- this useEffect will be triggered just one time at component initialization
+                console.log(router);
+            router.events.on("routeChangeStart", (url) => {
+               console.log("url" + url);
+               setLoading(true)
+            });
+            router.events.on("routeChangeComplete", (url) => {
+               console.log("Route is changed");
+               setLoading(false)
+            });
+        }, []);
         return (
-                <div className={style.background} >
-                     {/* <img className={style.backgroundPC} src={BACKGROUND} alt=""/>
-                     <img className={style.backgroundMB} src={BACKGROUNDMB} alt=""/>
-                     <video className={style.backgroundPCV} src={BACKGROUNDVideo} alt="" autoPlay='autoplay' muted='muted'  loop='loop'/> */}
-                        {children}
-                </div>
+                <>
+                        {loading && <div style={{background:'black',width:'100vw',height:'100vh'}}></div>}
+                                {children}
+                </>
         )
 }
 
