@@ -4,7 +4,7 @@ import Slider from "react-slick";
 import style from "./features.module.scss";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-const urlimgSoldiers = "/assets/SOLDIERS_LINE.png";
+const urlimgSoldiers = "/assets/SOLDIERS_LINE.webp";
 const urlimgARENA = "/assets/ARENA_pc.webp";
 const urlimgARENA_MB = "/assets/ARENA_PIC_MB.webp";
 const urlARENA_INFO = "/assets/ARENA_INFO_MB.webp";
@@ -17,8 +17,6 @@ const urlimgLEADERBOARD_INFO = "/assets/LEADERBOARD_INFO_MB.webp";
 const urlimgUPGRADE = "/assets/UPGRADE_pc.webp";
 const urlimgUPGRADE_MB = "/assets/UPGRADE_PIC_MB.webp";
 const urlimgUPGRADE_INFO = "/assets/UPGRADE_INFO_MB.webp";
-// const urlimgBlue_Dot = "/assets/Blue_Dot.webp";
-// const urlimgGray_Dot = "/assets/Gray_Dot.webp";
 
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;

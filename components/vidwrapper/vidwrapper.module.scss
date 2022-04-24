@@ -77,7 +77,7 @@
                 color: #4EFEFE;
                 background-color: #0000;
                 font-family: 'Monda';
-                background-image: url(../../public/assets/button2.png);
+                background-image: url(../../public/assets/button2.webp);
                 background-repeat: no-repeat;
                 background-size: cover;
                 border: none;
@@ -86,11 +86,11 @@
                 cursor: pointer;
             }
             & a:hover .btnPD{
-                background-image: url(../../public/assets/button2_hover.png);
+                background-image: url(../../public/assets/button2_hover.webp);
                 color: white;
             }
             & a:active .btnPD{
-                background-image: url(../../public/assets/button2_Active.png);
+                background-image: url(../../public/assets/button2_Active.webp);
                 color: white;
             }
             & .btnPN{
@@ -103,7 +103,7 @@
                 transform: translate(-50%);
                 background-color: #0000;
                 font-family: 'Monda';
-                background-image: url(../../public/assets/button2.png);
+                background-image: url(../../public/assets/button2.webp);
                 background-repeat: no-repeat;
                 background-size: cover;
                 border: none;
@@ -112,11 +112,11 @@
                 cursor: pointer;
             }
             & .btnPN:hover{
-                background-image: url(../../public/assets/button2_hover.png);
+                background-image: url(../../public/assets/button2_hover.webp);
                 color: white;
             }
             & .btnPN:active{
-                background-image: url(../../public/assets/button2_Active.png);
+                background-image: url(../../public/assets/button2_Active.webp);
                 color: white;
             }
         }
@@ -171,7 +171,7 @@
 @media screen and (max-width: 600px) {
     .Vidwrapper .banner_PC {
             & .image1{
-                content: url('../../public/assets/backgroung_HOME.png');
+                content: url('../../public/assets/backgroung_HOME.webp');
             }
             & .image2{
                 top: 10%;

@@ -3,9 +3,9 @@ import style from "./about.module.scss";
 import clsx from "clsx";
 const BgVideo = "/assets/Background_Video_MTG.webp";
 const urlimgAblout = "/assets/img_Ablout.webp";
-const urlimgrobot = "/assets/metagunner_1.png";
-const urlSLOGAN = '/assets/SLOGAN.png'
-const urlRBLtrailer = '/assets/robot_trailer.png'
+const urlimgrobot = "/assets/metagunner_1.webp";
+const urlSLOGAN = '/assets/SLOGAN.webp'
+const urlRBLtrailer = '/assets/robot_trailer.webp'
 
 function About() {
   const [positionX,setPositionX] = useState(0)

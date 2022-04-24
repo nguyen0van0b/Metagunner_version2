@@ -2,7 +2,7 @@
     position: relative;
     width: 100%;
     height: 100%;
-    background-image: url(../../public/assets/BASECAMP_BACKGROUND.png);
+    background-image: url(../../public/assets/BASECAMP_BACKGROUND.webp);
     background-position: 100%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -56,7 +56,7 @@
 }
 @media screen and (max-width:600px) {
     .basecamp {
-        background-image: url(../../public/assets/BASECAMP_BACKGROUND_MB.png);
+        background-image: url(../../public/assets/BASECAMP_BACKGROUND_MB.webp);
         height: 100vh;
         margin-top: 100px;
         & video{

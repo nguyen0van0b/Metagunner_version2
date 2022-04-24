@@ -1,11 +1,3 @@
-// import urlImgTelegram from '../../media/telegram.svg'
-// import urlImgDiscord from '../../media/telegram.svg'
-// import urlImgTwitter from '../../media/telegram.svg'
-// import urlImgGithub from '../../media/telegram.svg'
-// import urlImgMedium from '../../media/telegram.svg'
-// import urlImgBG from '../../media/communities.8a3fa910.png'
-
-
 import style from  './communities.module.scss'
 
 function Communities(){

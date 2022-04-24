@@ -1,9 +1,9 @@
 import { useEffect } from 'react'
 import style from './vidwrapper.module.scss'
 const urlLogo = '/assets/Logo.webp'
-const urlimg1 = '/assets/BACKGROUND.png'
-const urlimg4 = '/assets/Soldiers_banner.png'
-const urlSLOGAN = '/assets/SLOGAN.png'
+const urlimg1 = '/assets/BACKGROUND.webp'
+const urlimg4 = '/assets/Soldiers_banner.webp'
+const urlSLOGAN = '/assets/SLOGAN.webp'
 const urlVideo = '/assets/background_PC_MTG.mp4'
 
 

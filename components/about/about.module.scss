@@ -37,7 +37,7 @@
 .about {
     // background-color: black;
     position: relative;
-    background-image: url(../../public/assets/Trailer_background.png);
+    background-image: url(../../public/assets/Trailer_background.webp);
     background-size: cover;
     z-index: 9;
     animation: animationSection 1s linear 1s;
@@ -100,7 +100,7 @@
             height: 100vh;
             position: relative;
             display: block;
-            background-image: url(../../public/assets/SLOGAN_BACKGROUND_MB.png);
+            background-image: url(../../public/assets/SLOGAN_BACKGROUND_MB.webp);
             background-repeat: no-repeat;
             background-size: cover;
             &>img{
@@ -134,7 +134,7 @@
                 font-weight: 700;
                 color: #4EFEFE;
                 background-color: #0000;
-                background-image: url(../../public/assets/button2.png);
+                background-image: url(../../public/assets/button2.webp);
                 background-repeat: no-repeat;
                 background-size: cover;
                 border: none;
@@ -142,10 +142,10 @@
                 height: 71px;
             }
             & a:hover .btnPD{
-                background-image: url(../../public/assets/button2_hover.png);
+                background-image: url(../../public/assets/button2_hover.webp);
             }
             & a:active .btnPD{
-                background-image: url(../../public/assets/button2_Active.png);
+                background-image: url(../../public/assets/button2_Active.webp);
             }
             & .btnPN{
                 position: absolute;
@@ -157,7 +157,7 @@
                 color: #4EFEFE;
                 transform: translate(-50%);
                 background-color: #0000;
-                background-image: url(../../public/assets/button2.png);
+                background-image: url(../../public/assets/button2.webp);
                 background-repeat: no-repeat;
                 background-size: cover;
                 border: none;
@@ -165,10 +165,10 @@
                 height: 71px;
             }
             & .btnPN:hover{
-                background-image: url(../../public/assets/button2_hover.png);
+                background-image: url(../../public/assets/button2_hover.webp);
             }
             & .btnPN:active{
-                background-image: url(../../public/assets/button2_Active.png);
+                background-image: url(../../public/assets/button2_Active.webp);
             }
         }
         &BGimg{
@@ -182,7 +182,7 @@
         }
         & .container {
             height: auto;
-            background-image: url(../../public/assets/Back_ground_trailer.png);
+            background-image: url(../../public/assets/Back_ground_trailer.webp);
             background-repeat: no-repeat;
             background-size: cover;
         }

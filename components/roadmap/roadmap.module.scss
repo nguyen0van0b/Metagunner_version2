@@ -2,7 +2,7 @@
 
 .roadmap{
     overflow: hidden;
-    background-image: url(../../public/assets/ROADMAP_BACKGROUND.png);
+    background-image: url(../../public/assets/ROADMAP_BACKGROUND.webp);
     background-position: center right;
     background-repeat: no-repeat;
     background-size: cover;
@@ -141,7 +141,7 @@
 @media screen and (max-width:600px) {
     .roadmap{
         margin-top: 0;
-        background-image: url(../../public/assets/ROADMAP_BACKGROUND_MB.png);
+        background-image: url(../../public/assets/ROADMAP_BACKGROUND_MB.webp);
         margin-top: -150px;
         &Wrapper{
             &Item{

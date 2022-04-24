@@ -3,14 +3,14 @@
 
 }
 .tokenomics_TEAM{
-    background-image: url(../../public/assets/bg_tokenomics_team.png);
+    background-image: url(../../public/assets/bg_tokenomics_team.webp);
     background-position: center right;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
 }
 .tokenomics{
-    padding-top: 20px;
+    padding-top: 90px;
     position: relative;
     & h2{
         font-family: "NEXON Football Gothic",'Poppins',sans-serif;
@@ -66,40 +66,40 @@
 }
 .tokenomicsLine{
     &1:hover{
-        content: url(../../public/assets/1.1.png);
+        content: url(../../public/assets/1.1.webp);
     }
     &2:hover{
-        content: url(../../public/assets/2.1.png);
+        content: url(../../public/assets/2.1.webp);
     }
     &3:hover{
-        content: url(../../public/assets/3.1.png);
+        content: url(../../public/assets/3.1.webp);
     }
     &4:hover{
-        content: url(../../public/assets/4.1.png);
+        content: url(../../public/assets/4.1.webp);
     }
     &5:hover{
-        content: url(../../public/assets/5.1.png);
+        content: url(../../public/assets/5.1.webp);
     }
     &6:hover{
-        content: url(../../public/assets/6.1.png);
+        content: url(../../public/assets/6.1.webp);
     }
     &7:hover{
-        content: url(../../public/assets/7.1.png);
+        content: url(../../public/assets/7.1.webp);
     }
     &8:hover{
-        content: url(../../public/assets/8.1.png);
+        content: url(../../public/assets/8.1.webp);
     }
     &9:hover{
-        content: url(../../public/assets/9.1.png);
+        content: url(../../public/assets/9.1.webp);
     }
     &10:hover{
-        content: url(../../public/assets/10.1.png);
+        content: url(../../public/assets/10.1.webp);
     }
     &11:hover{
-        content: url(../../public/assets/11.1.png);
+        content: url(../../public/assets/11.1.webp);
     }
     &12:hover{
-    content: url(../../public/assets/12.1.png);
+    content: url(../../public/assets/12.1.webp);
 }
 }
 .tokenomicsLine{
@@ -225,7 +225,7 @@
 
 @media screen and (max-width: 650px) {
     .tokenomics_TEAM{
-        background-image: url(../../public/assets/Background_tokenomic.png);
+        background-image: url(../../public/assets/Background_tokenomic.webp);
     }
     .TextMB{
         display: block;

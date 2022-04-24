@@ -1,29 +1,30 @@
 import { useEffect,useState } from 'react';
 import { useRouter } from "next/router";
+import style from './layout.module.scss'
 import AOS from "aos";
+const imglogo = "/assets/Logo.webp";
 
 function Layout({children}){
         const router = useRouter()
-        const [loading, setLoading] = useState(false);
+        const [loading, setLoading] = useState(true);
         useEffect(() => {
                 AOS.init({duration: 1200,});
                 AOS.refresh();
               }, []);
-          useEffect(() => { //<-- this useEffect will be triggered just one time at component initialization
-                console.log(router);
-            router.events.on("routeChangeStart", (url) => {
-               console.log("url" + url);
-               setLoading(true)
-            });
-            router.events.on("routeChangeComplete", (url) => {
-               console.log("Route is changed");
-               setLoading(false)
-            });
-        }, []);
+          useEffect(() => { 
+                window.addEventListener('load', event => { 
+                       setLoading(false)
+                })
+        }, [loading]);
         return (
                 <>
-                        {loading && <div style={{background:'black',width:'100vw',height:'100vh'}}></div>}
+                        {loading ? <div className={style.loadingpage}>
+                                <img src={imglogo} alt=""/>
+                        </div>:
+                <>
                                 {children}
+                                </>
+        }
                 </>
         )
 }

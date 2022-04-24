@@ -1,4 +1,4 @@
-const logo1 = '/assets/chainlink.png'
+const logo1 = '/assets/chainlink.webp'
 const title = '/assets/INVESTORS_PARTNERS.webp'
 // import imggamefi from '../../media/gamefi.f1bea293.png'
 // import imgderace from '../../media/derace.ce76ce89.png'

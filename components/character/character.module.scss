@@ -8,7 +8,7 @@
     height: 120vh;
     padding-top: 90px;
     // mix-blend-mode: screen;
-    background-image: url(../../public/assets/SOLDIER_BACKGROUND.png);
+    background-image: url(../../public/assets/SOLDIER_BACKGROUND.webp);
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
@@ -73,48 +73,26 @@
         }
         & .Icon_{
             &Des:hover{
-                content: url(../../public/assets/Destroyer_Icon_Metagunner_hover.png);
+                content: url(../../public/assets/Destroyer_Icon_Metagunner_hover.webp);
             }
             &Spe:hover{
-                content: url(../../public/assets/Special_Force_Icon_Metagunner_hover.png);
+                content: url(../../public/assets/Special_Force_Icon_Metagunner_hover.webp);
             }
             &Gun:hover{
-                content: url(../../public/assets/Gunner_Icon_Metagunner_hover.png);
+                content: url(../../public/assets/Gunner_Icon_Metagunner_hover.webp);
             }
             &Off:hover{
-                content: url(../../public/assets/Officer_Icon_Metagunner_hover.png);
+                content: url(../../public/assets/Officer_Icon_Metagunner_hover.webp);
             }
             &Sco:hover{
-                content: url(../../public/assets/Scout_Icon_Metagunner_hover.png);
+                content: url(../../public/assets/Scout_Icon_Metagunner_hover.webp);
             }
             &Sni:hover{
-                content: url(../../public/assets/Sniper_Icon_Metagunner_hover.png);
+                content: url(../../public/assets/Sniper_Icon_Metagunner_hover.webp);
             }
             &Med:hover{
-                content: url(../../public/assets/Medic_Icon_Metagunner_hover.png);
+                content: url(../../public/assets/Medic_Icon_Metagunner_hover.webp);
             }
-
-            // &Des:active{
-            //     content: url(../../public/assets/Destroyer_Icon_Metagunner_Click.png);
-            // }
-            // &Spe:active{
-            //     content: url(../../public/assets/Special_Force_Icon_Metagunner_Click.png);
-            // }
-            // &Gun:active{
-            //     content: url(../../public/assets/Gunner_Icon_Metagunner_Click.png);
-            // }
-            // &Off:active{
-            //     content: url(../../public/assets/Officer_Icon_Metagunner_Click.png);
-            // }
-            // &Sco:active{
-            //     content: url(../../public/assets/Scout_Icon_Metagunner_Click.png);
-            // }
-            // &Sni:active{
-            //     content: url(../../public/assets/Sniper_Icon_Metagunner_Click.png);
-            // }
-            // &Med:active{
-            //     content: url(../../public/assets/Medic_Icon_Metagunner_Click.png);
-            // }
         }
     }
     &SecondSlider{ 

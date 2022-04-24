@@ -1,0 +1,33 @@
+.loadingpage{
+    background: linear-gradient(180deg, #2A92FA 0%, #081734 100%);
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    & img{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 20%;
+        height: auto;
+        transform: translate(-50%,-50%);
+        animation: animationloading 4s linear infinite;
+    }
+}
+@keyframes animationloading {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+@media screen and (max-width: 500px) {
+    .loadingpage{
+        & img {
+            width: 50%;
+        }
+    }
+}

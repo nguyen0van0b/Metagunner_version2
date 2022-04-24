@@ -4,7 +4,7 @@ import Slider from "react-slick";
 import style from "./NFTsItem.module.scss"
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
-const urlimgMeta = "/assets/META_KOG_LINE.png";
+const urlimgMeta = "/assets/META_KOG_LINE.webp";
 // Character Card
 const urlKrato = "/assets/Krato_Metagunner.webp"
 const urlZero = "/assets/Zero_Metagunner.webp"

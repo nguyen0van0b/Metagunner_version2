@@ -6,41 +6,41 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import react from "react";
 
-const urlDestroyer_Icon = "/assets/Destroyer_Icon_Metagunner.png";
-const urlSpecial_Force_Icon = "/assets/Special_Force_Icon_Metagunner.png";
-const urlGunner_Icon = "/assets/Gunner_Icon_Metagunner.png";
-const urlOfficer_Icon = "/assets/Officer_Icon_Metagunner.png";
-const urlScout_Icon = "/assets/Scout_Icon_Metagunner.png";
-const urlSniper_Icon = "/assets/Sniper_Icon_Metagunner.png";
-const urlMedic_Icon = "/assets/Medic_Icon_Metagunner.png";
+const urlDestroyer_Icon = "/assets/Destroyer_Icon_Metagunner.webp";
+const urlSpecial_Force_Icon = "/assets/Special_Force_Icon_Metagunner.webp";
+const urlGunner_Icon = "/assets/Gunner_Icon_Metagunner.webp";
+const urlOfficer_Icon = "/assets/Officer_Icon_Metagunner.webp";
+const urlScout_Icon = "/assets/Scout_Icon_Metagunner.webp";
+const urlSniper_Icon = "/assets/Sniper_Icon_Metagunner.webp";
+const urlMedic_Icon = "/assets/Medic_Icon_Metagunner.webp";
 
-const urlDestroyer_BG = "/assets/BG_Destroyer.png";
-const urlSpecial_Force_BG = "/assets/BG_Special_Force.png";
-const urlGunner_BG = "/assets/BG_gunner.png";
-const urlOfficer_BG = "/assets/BG_officer.png";
-const urlScout_BG = "/assets/BG_scout.png";
-const urlSniper_BG = "/assets/BG_Sniper.png";
-const urlMedic_BG = "/assets/BG_medic.png";
+const urlDestroyer_BG = "/assets/BG_Destroyer.webp";
+const urlSpecial_Force_BG = "/assets/BG_Special_Force.webp";
+const urlGunner_BG = "/assets/BG_gunner.webp";
+const urlOfficer_BG = "/assets/BG_officer.webp";
+const urlScout_BG = "/assets/BG_scout.webp";
+const urlSniper_BG = "/assets/BG_Sniper.webp";
+const urlMedic_BG = "/assets/BG_medic.webp";
 
 
 
-const urlDESTROYER = "/assets/SOLDIERS_DESTROYER.png";
-const urlSPECIALFORCE = "/assets/SOLDIERS_SPECIAL_FORCE.png";
-const urlGUNNER = "/assets/SOLDIERS_GUNNER.png";
-const urlOFFICER = "/assets/SOLDIERS_OFFICER.png";
-const urlSCOUT = "/assets/SOLDIERS_SCOUT.png";
-const urlSNIPER = "/assets/SOLDIERS_SNIPER.png";
-const urlMEDIC = "/assets/SOLDIERS_MEDIC.png";
+const urlDESTROYER = "/assets/SOLDIERS_DESTROYER.webp";
+const urlSPECIALFORCE = "/assets/SOLDIERS_SPECIAL_FORCE.webp";
+const urlGUNNER = "/assets/SOLDIERS_GUNNER.webp";
+const urlOFFICER = "/assets/SOLDIERS_OFFICER.webp";
+const urlSCOUT = "/assets/SOLDIERS_SCOUT.webp";
+const urlSNIPER = "/assets/SOLDIERS_SNIPER.webp";
+const urlMEDIC = "/assets/SOLDIERS_MEDIC.webp";
 
-const urlSoldier_Tab = "/assets/Soldier_Tab_MB.png";
+const urlSoldier_Tab = "/assets/Soldier_Tab_MB.webp";
 
-const urlDESTROYER_MB = "/assets/SOLDIERS_DESTROYER_MB.png";
-const urlSPECIALFORCE_MB = "/assets/SOLDIERS_SPECIAL_FORCE_MB.png";
-const urlGUNNER_MB = "/assets/SOLDIERS_GUNNER_MB.png";
-const urlOFFICER_MB = "/assets/SOLDIERS_OFFICER_MB.png";
-const urlSCOUT_MB = "/assets/SOLDIERS_SCOUT_MB.png";
-const urlSNIPER_MB = "/assets/SOLDIERS_SNIPER_MB.png";
-const urlMEDIC_MB = "/assets/SOLDIERS_MEDIC_MB.png";
+const urlDESTROYER_MB = "/assets/SOLDIERS_DESTROYER_MB.webp";
+const urlSPECIALFORCE_MB = "/assets/SOLDIERS_SPECIAL_FORCE_MB.webp";
+const urlGUNNER_MB = "/assets/SOLDIERS_GUNNER_MB.webp";
+const urlOFFICER_MB = "/assets/SOLDIERS_OFFICER_MB.webp";
+const urlSCOUT_MB = "/assets/SOLDIERS_SCOUT_MB.webp";
+const urlSNIPER_MB = "/assets/SOLDIERS_SNIPER_MB.webp";
+const urlMEDIC_MB = "/assets/SOLDIERS_MEDIC_MB.webp";
 
 
 function SampleNextArrow(props) {

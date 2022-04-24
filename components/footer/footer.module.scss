@@ -1,6 +1,6 @@
 
 .footer {
-    background-image: url(../../public/assets/FOOTER_BACKGROUND.png);
+    background-image: url(../../public/assets/FOOTER_BACKGROUND.webp);
     background-position: center right;
     background-repeat: no-repeat;
     background-size: cover;
@@ -169,13 +169,17 @@
         font-weight: 700;
         color: #4efefe;
         background-color: #0000;
-        background-image: url(../../public/assets/button2.png);
+        background-image: url(../../public/assets/button2.webp);
         background-position: center;
         background-repeat: no-repeat;
         background-size: contain;
         border: none;
         width: max-content;
         padding: 32px 15px;
+    }
+    &Tele:hover{
+        background-image: url(../../public/assets/button2_hover.webp);
+        color: #fff;
     }
 }
 @media screen and (max-width:1200px) {
